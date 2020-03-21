@@ -1,3 +1,4 @@
+/**
 .App {
   text-align: center;
 }
@@ -35,4 +36,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+**/
+.landing-grid {
+  background: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.projects-grid {
+  display: flex;
 }
