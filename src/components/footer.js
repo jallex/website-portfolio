@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
 
 
-class Work3D extends Component {
+class Footer extends Component {
   render() {
     return(
-      <div><h1>3D Modeling and Animation</h1></div>
+      <div><p>website personally developed with ♥️</p></div>
     )
   }
 }
 
-export default Work3D;
+export default Footer;
