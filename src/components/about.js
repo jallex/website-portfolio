@@ -8,10 +8,12 @@ import { Element } from 'react-scroll'
 class About extends Component {
   render() {
     return(
-      <section className="aboutText"  id="about" alignItems="center">
-          <Grid className="about-grid">
-            <Cell col={12}></Cell>
-          </Grid>
+      <section className="aboutText"  id="about" style={{  
+        backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")",
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+      }} alignItems="center">
           <h3>Hi! I'm Jackie Allex and I'm a developer and animator. </h3>
           </section>
     )

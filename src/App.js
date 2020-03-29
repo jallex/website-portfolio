@@ -17,43 +17,30 @@ const App = () => {
     <div className="content">
       <div className="navbar">
         <Navbar/>
-        </div>
-  <div className = "sections">
-  <div className="div1">
-    <Home/>
-      <hr/>  
+        </div><div className = "sections">
+  <div className="div1"> <Home/></div>
+<div style=
+  {{width: '100%', margin: 0}} className="div2"><About/>
       </div>
-  <div style=
-  {{width: '100%', margin: 'auto'}} className="div2">
-      <About/>
-      <hr/>  
-      </div>
-    <Content>
-      </Content>
       <div style=
-  {{width: '100%', margin: 'auto'}} className="div3">
+  {{width: '100%', margin: 0}} className="div3">
       <DemoReel/>
-      <hr/>  
       </div>
       <div style=
-  {{width: '100%', margin: 'auto'}} className="div4">
+  {{width: '100%', margin: 0}} className="div4">
       <Code/>
-      <hr/>  
       </div>
       <div style=
-  {{width: '100%', margin: 'auto'}} className="div5">
+  {{width: '100%', margin: 0}} className="div5">
       <Work3D/>
-      <hr/>  
       </div>
       <div style=
-  {{width: '100%', margin: 'auto'}} className="div6">
+  {{width: '100%', margin: 0}} className="div6">
       <Artwork/>
-      <hr/>  
       </div>
       <div style=
-  {{width: '100%', margin: 'auto'}} className="div7">
+  {{width: '100%', margin: 0}} className="div7">
       <Contact/>
-      <hr/>  
       </div>
       </div>
 </div> 

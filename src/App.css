@@ -1,9 +1,5 @@
 .content {
-  outline: 1px dashed red;
-  align-items: stretch;
-  justify-content: flex-start;
   align-items: center;
-  flex-direction: column;
   top: 0;
   left: 0;
   width: 100%;
@@ -15,11 +11,13 @@
 }
 
   .div1 {
-    outline: 1px dashed red;
     margin: 0;
+    padding:0;
   }
   .div2 {
-    outline: 1px dashed red;
+    outline: 1px dashed blue;
+    margin: 0;
+    padding:0;
   }
   .div3 {
     outline: 1px dashed red;

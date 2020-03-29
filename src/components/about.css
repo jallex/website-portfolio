@@ -1,7 +1,10 @@
  .aboutText {
      height: 100vh;
+     margin:0;
+     padding:0;
  }
- 
- .aboutText .about-grid {
-background:white;
+
+.aboutText h3 {
+    margin: 0;
+  padding:0;
 }

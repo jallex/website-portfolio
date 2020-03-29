@@ -1,3 +1,9 @@
 .demo-reel-page {
     height: 100vh;
 }
+
+
+.demo-reel-page h1 {
+    margin: 0;
+  padding:0;
+}
