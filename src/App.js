@@ -15,7 +15,9 @@ import Navbar from './components/navbar';
 const App = () => {
   return (
     <div className="content">
+      <div className="navbar">
         <Navbar/>
+        </div>
   <div className = "sections">
   <div className="div1">
     <Home/>

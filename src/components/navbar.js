@@ -6,56 +6,86 @@ class Navbar extends Component {
     state = {};
     render(){
         return (
-    <div className="navbar">
+            <nav className="nav" id="navbar">
+        <div className="home">
         <Link
+        style={{textDecoration: 'none', color: 'white'}}
     activeClass="active"
     to="home"
+    spy={true}
     smooth={true}
     duration= {500}
 >Home</Link>
-
+</div>
+         <ul className="nav-items">
+<li className="nav-item">
 <Link
+style={{textDecoration: 'none', color: 'white'}}
     activeClass="active"
     to="about"
+    spy={true}
     smooth={true}
+    offset={-70}
     duration= {500}
 >About</Link>
-
+</li>
+<li className="nav-item">
 <Link
+style={{textDecoration: 'none', color: 'white'}}
     activeClass="active"
     to="demo-reel"
+    spy={true}
     smooth={true}
+    offset={-70}
     duration= {500}
 >Demo Reel</Link>
-
+</li>
+<li className="nav-item">
 <Link
+style={{textDecoration: 'none', color: 'white'}}
     activeClass="active"
     to="code"
+    spy={true}
     smooth={true}
+    offset={-70}
     duration= {500}
 >Code</Link>
-
+</li>
+<li className="nav-item">
 <Link
+style={{textDecoration: 'none', color: 'white'}}
     activeClass="active"
     to="work3D"
+    spy={true}
     smooth={true}
+    offset={-70}
     duration= {500}
 >3D Modeling and Animation</Link>
-
+</li>
+<li className="nav-item">
 <Link
+style={{textDecoration: 'none', color: 'white'}}
     activeClass="active"
     to="artwork"
+    spy={true}
     smooth={true}
+    offset={-70}
     duration= {500}
 >Artwork</Link>
-
+</li>
+<li className="nav-item">
 <Link
+style={{textDecoration: 'none', color: 'white'}}
     activeClass="active"
     to="contact"
+    spy={true}
     smooth={true}
+    offset={-70}
     duration= {500}
 >Contact</Link>
-    </div>
+</li>
+    </ul>
+    </nav>
     );
     }
 }

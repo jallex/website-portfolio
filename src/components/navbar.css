@@ -1,17 +1,45 @@
-.navbar {
+.nav {
     position: fixed;
     top: 0;
     width: 100%;
-    outline: 1px dashed red;
+    background-color: #C9886D;
+    height: 70px;
 }
 
-.navbar ul {
-    list-style: none;
-    text-align: right;
-}
+.nav-item > .active {
+    border-bottom: 2px solid white;
+  }
 
-.navbar ul li {
-    color: white;
-    font-size: 6em;
+.nav-item:hover {
+    color: black;
+    cursor: pointer;
+  }
+
+  .nav-item {
     display: inline;
+    margin-left: 2rem;
+    color: #333;
+  }
+
+.home {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    padding-top: 29px;
 }
+
+.home:hover {
+    cursor: pointer;
+  }
+
+.nav-items {
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+

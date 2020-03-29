@@ -41,8 +41,7 @@
     outline: 1px dashed red;
   }
 
-  .content .header-color
-  {
-    background: #E3503E;
-    margin: 0;
-  }
+  .navbar > .active {
+    border-bottom: 1px solid white;
+}
+
