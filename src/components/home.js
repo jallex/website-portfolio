@@ -5,9 +5,8 @@ import './home.css';
 class Home extends Component {
   render() {
     return(
-      <div style={{width: '100%', margin: 'auto'}} className="homeText" alignItems="center">
-          <Grid className="home-grid">
-            <Cell col={12}></Cell>
+      <div style={{width: '100%', margin: 0, padding: 0}} className="homeText" id="home" alignItems="center">
+          <div className="home-grid">
             <div className="image">
             <img
               src="https://p7.hiclipart.com/preview/961/21/288/low-poly-fruit-art-rendering-3d-modeling-diamond-perspective-mango.jpg"
@@ -31,8 +30,9 @@ class Home extends Component {
           </div>
               </div>
 
-              </Grid>
+              </div>
             </div>
+            
     )
   }
 }

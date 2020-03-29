@@ -1,10 +1,12 @@
 .content {
   outline: 1px dashed red;
-  display:flex;
   align-items: stretch;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .content .sections {

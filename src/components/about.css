@@ -1,3 +1,7 @@
+ .aboutText {
+     height: 100vh;
+ }
+ 
  .aboutText .about-grid {
 background:white;
 }

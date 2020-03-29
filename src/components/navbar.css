@@ -1,0 +1,17 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    outline: 1px dashed red;
+}
+
+.navbar ul {
+    list-style: none;
+    text-align: right;
+}
+
+.navbar ul li {
+    color: white;
+    font-size: 6em;
+    display: inline;
+}
