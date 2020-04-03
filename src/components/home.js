@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-
 import './home.css';
 import * as THREE from "three";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
+import { Interaction } from 'three.interaction';
 
 class Home extends Component {
 
@@ -23,7 +23,7 @@ class Home extends Component {
       rectLight.lookAt( 1, 1, 3 );
       scene.add( rectLight )
       
-      var light = new THREE.PointLight( 0x00D8FF, 30, 100 );
+      var light = new THREE.PointLight( 0xffffff, 30, 100 );
       light.position.set( 50, 50, 50 );
       scene.add( light );
 
@@ -58,15 +58,63 @@ class Home extends Component {
       }
         );
 
+        const interaction = new Interaction(renderer, scene, camera);
+
+
+        // Create a texture loader so we can load our image file
+var loader2 = new THREE.TextureLoader();
+
+// Load an image file into a custom material
+var material = new THREE.MeshLambertMaterial({
+  map: loader2.load('https://t4.ftcdn.net/jpg/00/89/00/95/240_F_89009515_8ZOWFnUMhYynhDCXWHNGkgg0X7EbmcOl.jpg')
+});
+
+// create a plane geometry for the image with a width of 10
+// and a height that preserves the image's aspect ratio
+var geometry = new THREE.PlaneGeometry(10, 10*.75);
+
+// combine our image geometry and material into a mesh
+var mesh2 = new THREE.Mesh(geometry, material);
+mesh2.cursor = 'pointer';
+mesh2.on('touchstart', function(ev) {if(mesh.material.wireframe){
+  mesh.material.wireframe = false;
+}
+  else {
+    mesh.material.wireframe = true;
+  }});
+
+// set the position of the image mesh in the x,y,z dimensions
+mesh2.position.set(1, 1, 2 )
+mesh2.scale.set(0.04, 0.04, 0.04)
+
+// add the image to the scene
+scene.add(mesh2);
+
+
       var animate = function () {
         requestAnimationFrame( animate );
         if (mesh) mesh.rotation.y += 0.02;
         renderer.render( scene, camera );
       };
 
+      mesh2.addEventListener(`mousedown`, function () {
+        if (mesh2) {
+          if(mesh.material.wireframe)
+          mesh.material.wireframe = false;
+          else {
+            mesh.material.wireframe = true;
+          }
+        }
+    })
+
+
+
   
       animate();
+
   }
+
+  
 
   handleWindowResize = () => {
     const width = this.el.clientWidth;
@@ -79,10 +127,6 @@ class Home extends Component {
     // .updateProjectionMatrix for the changes to take effect.
     this.camera.updateProjectionMatrix();
   };
-
-  myfunction() {
-      // mesh.material.wireframe = true;
-  }
 
 
   render() {
