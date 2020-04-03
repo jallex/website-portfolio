@@ -2,9 +2,16 @@
      height: 100vh;
      margin:0;
      padding:0;
+     background-color:white;
  }
 
 .aboutText h3 {
     margin: 0;
   padding:0;
 }
+
+.aboutText .logo {
+    max-height: 100%;
+    max-width: auto;
+    float: right;
+  }
