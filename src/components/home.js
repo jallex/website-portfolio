@@ -5,10 +5,9 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import { Interaction } from 'three.interaction';
 import pic from "../images/CLICK2.png";
-import { Button } from 'react-scroll';
 class Home extends Component {
 
-  // to do: make size of model reactive to changes in screen size, add button that allows wireframe
+  // to do: add button that allows wireframe, add orbit controls
 
   componentDidMount() {
       var scene = new THREE.Scene();
@@ -134,7 +133,6 @@ function onWindowResize(){
             <div className="image">
             <div ref={ref => (this.mount = ref)} />
             </div>
-            <img className="click-image" src={pic} />
             <div className="banner-text">
               <h1>Jackie Allex</h1>
               <div className="social-links">

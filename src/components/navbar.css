@@ -1,6 +1,5 @@
 .nav {
     position: fixed;
-    top: 0;
     width: 100%;
     background-color: #C9886D;
     height: 70px;
@@ -18,14 +17,12 @@
   .nav-item {
     display: inline;
     margin-left: 2rem;
-    color: #333;
   }
 
 .home {
     float: left;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: calc(.3em + 1vw) calc(.2em + 1.7vw);
     font-size: calc(.3em + 1.7vw);
     padding-top: 29px;
 }
@@ -38,7 +35,6 @@
     float: right;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
     font-size: calc(.1em + 1.2vw);
 }
 

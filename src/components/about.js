@@ -1,9 +1,5 @@
 import React, { Component, useEffect, useState } from 'react';
-import ReactDOM from "react-dom";
-import { Grid, Cell } from 'react-mdl';
 import './about.css';
-import Flexbox from 'flexbox-react';
-import { Element } from 'react-scroll'
 import pic from '../images/about-back2.png';
 
 class About extends Component {
