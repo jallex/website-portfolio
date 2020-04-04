@@ -14,13 +14,11 @@
     flex-direction: column;
     resize: vertical;
     overflow: auto;
-    outline: 1px dashed red;
     margin: 0;
     padding: 0;
 }
 
 .homeText .home-grid .banner-text {
-    justify-content: center;
     top: 0;
     width: 100%;
     text-align: center;
@@ -49,7 +47,7 @@
     font-size: calc(3em + 3vw);
     color: #F8E9D1;
     width: 100%;
-    margin-bottom: 0;
+    padding-top: 30px;
 }
 
 .homeText .home-grid .banner-text .social-links{
@@ -68,3 +66,16 @@
     color: white;
     font-size: 3em;
 }
+
+.homeText .home-grid .image .click-image {
+    max-height: calc(1.5em + 3vw);
+    max-width: calc(7.5em + 3vw);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+    left: calc(35em + 3vw);
+    top: calc(12em + 3vw);
+}
+
+
+
