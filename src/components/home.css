@@ -11,7 +11,7 @@
 
 .homeText .home-grid .image {
     text-align: center;
-    padding-top: 14%;
+    padding-top: 7%;
 }
 
 .homeText .home-grid .banner-text h1{
@@ -19,7 +19,7 @@
   /* font-family: 'Lato', sans-serif; */
     font-size: calc(3em + 3vw);
     color: #F8E9D1;
-    padding-top: calc(.1em);
+    padding-top: 1px;
 }
 
 .homeText .home-grid .banner-text .social-links{
@@ -37,4 +37,11 @@
     font-size: 3em;
 }
 
+
+.homeText .home-grid .image .fishes {
+    height: 50px;
+    padding-left: 300px;
+    padding-bottom: 5px;
+    object-position: center top;
+}
 

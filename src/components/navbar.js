@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-scroll";
 import './navbar.css';
+import { Navbar } from "react-bootstrap";
 
-class Navbar extends Component {
+class Navbarg extends Component {
     state = {};
     render(){
         return (
-            <nav className="nav" id="navbar">
+            <div className="nav" id="navbar">
+                <Navbar>
         <div className="home">
         <Link
         style={{textDecoration: 'none', color: 'white'}}
@@ -85,9 +87,11 @@ style={{textDecoration: 'none', color: 'white'}}
 >Contact</Link>
 </li>
     </ul>
-    </nav>
+    </Navbar>
+    </div>
+
     );
     }
 }
 
-export default Navbar;
+export default Navbarg;

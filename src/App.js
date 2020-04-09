@@ -9,14 +9,14 @@ import Work3D from './components/work3D';
 import Artwork from './components/artwork';
 import Contact from './components/contact';
 import Home from './components/home';
-import Navbar from './components/navbar';
+import Navbarg from './components/navbar';
 
 
 const App = () => {
   return (
     <div className="content">
       <div className="navbar">
-        <Navbar/>
+        <Navbarg/>
         </div><div className = "sections">
   <div className="div1"> <Home/></div>
 <div style=

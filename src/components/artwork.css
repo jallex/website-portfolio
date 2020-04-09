@@ -1,8 +1,40 @@
 .artwork-page {
-    height: 100vh;
+    height: 410vh;
 }
 
 .artwork-page h1 {
     margin: 0;
   padding:0;
+}
+
+@import 'https://fonts.googleapis.com/css?family=PT+Sans:400,700';
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'PT Sans';
+    font-size: 18px;
+}
+.tiles {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    margin:0;
+}
+.tile {
+    margin: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    width: auto;
+    height: 28vw;
+}
+
+.title .img {
+  width: 100%;
+  transition: transform 500ms ease;
 }

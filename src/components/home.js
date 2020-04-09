@@ -4,7 +4,7 @@ import * as THREE from "three";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import { Interaction } from 'three.interaction';
-import pic from "../images/CLICK2.png";
+import pic from "../images/CLICK3.png";
 class Home extends Component {
 
   // to do: add button that allows wireframe, add orbit controls
@@ -117,7 +117,7 @@ mesh2.scale.set(0.13, 0.07, 0.2)
       window.addEventListener( 'resize', onWindowResize, false );
 
 function onWindowResize(){
-
+  
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize( window.innerWidth / 3.5, window.innerHeight / 3.5 );
@@ -131,10 +131,13 @@ function onWindowResize(){
       <div style={{width: '100%', margin: 0, padding: 0}} className="homeText" id="home" alignitems="center">
           <div className="home-grid">
             <div className="image">
+            <img src = {pic} className="fishes"/>
             <div ref={ref => (this.mount = ref)} />
             </div>
             <div className="banner-text">
+              <div className="cont">
               <h1>Jackie Allex</h1>
+              </div>
               <div className="social-links">
               <div className="linked-in">
               <a href="https://www.linkedin.com/in/jacquelineallex" rel="noopener noreferrer" target="_blank">
