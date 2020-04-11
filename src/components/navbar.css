@@ -1,8 +1,8 @@
 .nav {
     position: fixed;
     width: 100%;
-    background-color: #C9886D;
-    height: 70px;
+    background-color: #C9886D; 
+    height: 90px; /* how much offset we need in navbar.js line 30*/
 }
 
 .nav-item > .active {

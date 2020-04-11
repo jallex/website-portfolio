@@ -1,32 +1,25 @@
  .aboutText {
-     height: 100vh;
+     min-height: 100vh;
      margin:0;
      padding:0;
+     background: #F7F7F7;
  }
 
-.aboutText h3 {
+.aboutText h1 {
   margin: 0;
-  padding:0;
+  padding:25px;
   bottom: 8px;
   left: 16px;
-}
+  color: #C9886D;
+  /*font-family: 'Raleway', sans-serif;
+  font-family: 'Work Sans', sans-serif;*/
 
-.aboutText h3 {
-  margin: 0;
-  padding:0;
-  bottom: 8px;
-  left: 16px;
-}
-
-.aboutText h3 {
-  margin: 0;
-  padding:0;
-  bottom: 8px;
-  left: 16px;
 }
 
 .aboutText .background-img {
     max-height: 100vh;
-    max-width: 60%;
     float: right;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }

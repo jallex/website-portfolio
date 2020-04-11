@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './artwork.css';
-import { Card, CardDeck } from "react-bootstrap";
 import image1 from '../images/My artwork/1.png';
 import image2 from '../images/My artwork/2.jpg';
 import image3 from '../images/My artwork/3.jpg';
@@ -11,7 +10,7 @@ import image7 from '../images/My artwork/7.JPG';
 import image8 from '../images/My artwork/8.JPG';
 import image9 from '../images/My artwork/9.JPG';
 import image10 from '../images/My artwork/10.JPG';
-import image12 from '../images/My artwork/12.JPG';
+import image12 from '../images/My artwork/12.jpeg';
 import image13 from '../images/My artwork/13.gif';
 import image14 from '../images/My artwork/14.gif';
 import image15 from '../images/My artwork/15.gif';
@@ -124,78 +123,81 @@ class Thing extends React.Component {
 
 class Artwork extends Component {
   render() {
-    const data = [{
-      id: 1,
-      name: "Ballet",
-      image: image1
-    }, {
+    const data = [ {
       id: 2,
       name: "Forest",
       image: image2
     }, {
       id: 3,
-      name: "Whale",
+      name: "Bottles",
       image: image3
     },
     {
+      id: 1,
+      name: "Ballet",
+      image: image1
+    },
+    {
       id: 4,
-      name: "Mountain",
+      name: "Dog",
       image: image4
     }, {
       id: 5,
-      name: "Boat",
+      name: "Fire",
       image: image5
     }, {
       id: 6,
-      name: "Flowers",
+      name: "Water",
       image: image6
     }, {
       id: 7,
-      name: "Fire",
+      name: "Earth",
       image: image7
     }, {
       id: 8,
-      name: "Garden",
+      name: "Wind",
       image:image8
     }, {
       id: 9,
-      name: "Bridge",
+      name: "Eye fire",
       image: image9
     }, {
       id: 10,
-      name: "Bridge",
+      name: "Eye water",
       image: image10
     }, {
       id: 12,
-      name: "Bridge",
+      name: "Watch",
       image: image12
-    }, {
+    }, 
+    {
+      id: 17,
+      name: "Skeleton",
+      image: image17
+    },
+    {
+      id: 16,
+      name: "Eggs",
+      image: image16
+    },{
       id: 13,
-      name: "Bridge",
+      name: "Astro red",
       image: image13
     }, {
       id: 14,
-      name: "Bridge",
+      name: "Astro blue",
       image: image14
     }, {
       id: 15,
-      name: "Bridge",
+      name: "Hand animated",
       image: image15
-    }, {
-      id: 16,
-      name: "Bridge",
-      image: image16
-    }, {
-      id: 17,
-      name: "Bridge",
-      image: image17
-    }, {
+    },  {
       id: 18,
-      name: "Bridge",
+      name: "Hand pencil",
       image: image18
     }];
     return(
-      <div className="artwork-page" id="artwork"><h1>Artwork</h1>
+      <div className="artwork-page" id="artwork"><h1>Artwork and Illustration</h1>
        <Thing data = {data} />
 </div>
     )

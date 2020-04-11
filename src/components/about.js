@@ -6,8 +6,10 @@ import pic from '../images/about-back2.png';
 class About extends Component {
   render() {
     return(
+ 
       <section className="aboutText"  id="about" alignItems="center">
-          <h3>Hi! I'm Jackie, and I'm a developer and animator. </h3>
+          <img className="background-img" src={pic}/>
+          <h1>Hello! My name is Jackie, and I'm a developer and animator. </h1>
           <h4>I am an undergrad at Northeastern University studying Computer Science and Media Arts, 
             a computer graphics major under the Computer and Information Sciences Department.</h4>
             <h4>I love exploring topics relating graphics, animation, and code! In my freetime I 
@@ -21,7 +23,6 @@ class About extends Component {
               <li><b>Bank of America</b> summer 2019 (React.js, Node.js)</li>
               </ul> 
           </h4> 
-          <img className="background-img" src={pic}/>
           </section>
     )
 }

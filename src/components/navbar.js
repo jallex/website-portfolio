@@ -27,7 +27,7 @@ style={{textDecoration: 'none', color: 'white'}}
     to="about"
     spy={true}
     smooth={true}
-    offset={-70}
+    offset={-50}
     duration= {500}
 >About</Link>
 </li>
@@ -38,7 +38,7 @@ style={{textDecoration: 'none', color: 'white'}}
     to="demo-reel"
     spy={true}
     smooth={true}
-    offset={-70}
+    offset={-50}
     duration= {500}
 >Demo Reel</Link>
 </li>
@@ -49,7 +49,7 @@ style={{textDecoration: 'none', color: 'white'}}
     to="code"
     spy={true}
     smooth={true}
-    offset={-70}
+    offset={-50}
     duration= {500}
 >Code</Link>
 </li>
@@ -60,7 +60,7 @@ style={{textDecoration: 'none', color: 'white'}}
     to="work3D"
     spy={true}
     smooth={true}
-    offset={-70}
+    offset={-50}
     duration= {500}
 >3D Modeling and Animation</Link>
 </li>
@@ -71,7 +71,7 @@ style={{textDecoration: 'none', color: 'white'}}
     to="artwork"
     spy={true}
     smooth={true}
-    offset={-70}
+    offset={-50}
     duration= {500}
 >Artwork</Link>
 </li>
@@ -82,9 +82,14 @@ style={{textDecoration: 'none', color: 'white'}}
     to="contact"
     spy={true}
     smooth={true}
-    offset={-70}
+    offset={-50}
     duration= {500}
 >Contact</Link>
+</li>
+<li className="nav-item">
+<Link
+style={{textDecoration: 'none', color: 'white'}}
+>Resume</Link>
 </li>
     </ul>
     </Navbar>

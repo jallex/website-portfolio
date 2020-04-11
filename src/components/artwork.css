@@ -1,13 +1,12 @@
 .artwork-page {
-    height: 410vh;
+    margin-top : 0;
 }
 
 .artwork-page h1 {
     margin: 0;
-  padding:0;
+  padding:25px;
+  color: #C9886D; 
 }
-
-@import 'https://fonts.googleapis.com/css?family=PT+Sans:400,700';
 
 body {
     margin: 0;

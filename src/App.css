@@ -1,4 +1,6 @@
-
+.content {
+    background: #F7F7F7;
+}
 .content .navbar {
     z-index:1;
 }
