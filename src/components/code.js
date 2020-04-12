@@ -11,7 +11,7 @@ class Code extends Component {
   render() {
     return(
       <div className="code-page" id="code"><h1>Coding Projects</h1>
-     <CardDeck>
+     <CardDeck className="deck1">
   <Card>
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
@@ -60,7 +60,7 @@ class Code extends Component {
   </Card>
 </CardDeck>
 
-<CardDeck>
+<CardDeck className="deck2">
   <Card>
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>

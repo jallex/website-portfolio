@@ -3,4 +3,6 @@
 }
 .content .navbar {
     z-index:1;
+    margin: 0px;
+    padding:0;
 }

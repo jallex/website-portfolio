@@ -9,13 +9,14 @@ class About extends Component {
  
       <section className="aboutText"  id="about" alignItems="center">
           <img className="background-img" src={pic}/>
+          <div className = "me">
           <h1>Hello! My name is Jackie, and I'm a developer and animator. </h1>
           <h4>I am an undergrad at Northeastern University studying Computer Science and Media Arts, 
             a computer graphics major under the Computer and Information Sciences Department.</h4>
             <h4>I love exploring topics relating graphics, animation, and code! In my freetime I 
               enjoy drawing, playing guitar, traveling, skating, and spending time outdoors.
             </h4>
-            <h4> My interning experiences: View my resume to learn more!
+            <h4> My intern experiences: 
               <ul>
               <li>incoming <b>Lucasfilm</b>  intern summer 2020 </li>
               <li><b>Human Movement Lab</b>  spring 2020 (Python, C#, Blender, Unity)</li>
@@ -23,6 +24,7 @@ class About extends Component {
               <li><b>Bank of America</b> summer 2019 (React.js, Node.js)</li>
               </ul> 
           </h4> 
+          </div>
           </section>
     )
 }

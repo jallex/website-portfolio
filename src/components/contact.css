@@ -1,5 +1,6 @@
 .contact-page {
     height: 20vh;
+    padding-top: 200px;
 }
 
 
@@ -7,4 +8,9 @@
     margin: 0;
     color: #C9886D; 
   padding:25px;
+}
+
+.contact-page .img {
+  max-height: 200px;
+  padding: 25px;
 }

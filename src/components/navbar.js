@@ -8,7 +8,7 @@ class Navbarg extends Component {
     render(){
         return (
             <div className="nav" id="navbar">
-                <Navbar>
+                <Navbar className = "navv">
         <div className="home">
         <Link
         style={{textDecoration: 'none', color: 'white'}}

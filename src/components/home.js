@@ -28,7 +28,7 @@ class Home extends Component {
       scene.add( light );
 
       let renderer = new THREE.WebGLRenderer({antialias: true});
-      renderer.setSize( window.innerWidth / 3.5, window.innerHeight / 3.5 );
+      renderer.setSize( window.innerWidth / 3.5, window.innerWidth / 3.5 );
       document.getElementsByClassName("image")[0].appendChild( renderer.domElement );
       renderer.autoClear = false;
 
@@ -48,9 +48,7 @@ class Home extends Component {
           scene.add(gltf.scene);
           if (mesh) mesh.rotation.x += .8;
           mesh.addEventListener(`mousedown`, function () {
-            if (mesh2) {
               mesh.material.wireframe = !mesh.material.wireframe;
-            }
         })
           gltf.scene.traverse( function ( object ) {
 
@@ -70,32 +68,7 @@ class Home extends Component {
 
         const interaction = new Interaction(renderer, scene, camera);
 
-        var scene2 = new THREE.Scene();
-        // Create a texture loader so we can load our image file
-var loader2 = new THREE.TextureLoader();
-
-// Load an image file into a custom material
-var material = new THREE.MeshBasicMaterial({
-  map: loader2.load(pic)
-});
-material.anisotropy = renderer.getMaxAnisotropy();
-material.map.minFilter = THREE.LinearFilter;
-
-// create a plane geometry for the image with a width of 10
-// and a height that preserves the image's aspect ratio
-var geometry = new THREE.PlaneGeometry(10, 10*.75);
-
-// combine our image geometry and material into a mesh
-var mesh2 = new THREE.Mesh(geometry, material);
-mesh2.cursor = 'pointer';
-mesh2.on('touchstart', function(ev) {mesh.material.wireframe = !mesh.material.wireframe });
-
-// set the position of the image mesh in the x,y,z dimensions
-mesh2.position.set(1, -.5, 2.4)
-mesh2.scale.set(0.13, 0.07, 0.2)
-
-// add the image to the scene
-//scene.add(mesh2);
+     
 
 
       var animate = function () {
@@ -103,27 +76,32 @@ mesh2.scale.set(0.13, 0.07, 0.2)
         if (mesh) mesh.rotation.y += 0.02;
         renderer.clear();
         renderer.render( scene, camera );
-        renderer.render( scene2, camera );
       };
 
-      mesh2.addEventListener(`mousedown`, function () {
-        if (mesh2) {
-          mesh.material.wireframe = !mesh.material.wireframe;
-        }
-    })
 
       animate();
 
-      window.addEventListener( 'resize', onWindowResize, false );
+      function handleResize() {
+        if(window.innerWidth < window.innerHeight) {
+          camera.aspect = (window.innerHeight * 2)/ window.innerHeight;
+          camera.updateProjectionMatrix();
+          renderer.setSize((window.innerHeight* 2)/ 3.5, window.innerHeight/ 3.5);
+        }
+        else {
+          camera.aspect = window.innerWidth / window.innerHeight;
+          camera.updateProjectionMatrix();
+          renderer.setSize(window.innerWidth/ 3.5,window.innerHeight/ 3.5);
+      }
+        
+      }
+      window.addEventListener( 'resize', handleResize, false );
 
-function onWindowResize(){
-  
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize( window.innerWidth / 3.5, window.innerHeight / 3.5 );
-}
   }
-
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize, false)
+  }
+  
 
   render() {
     var mesh;

@@ -16,10 +16,23 @@
 
 }
 
+.aboutText h4 {
+  margin: 0;
+  padding:30px;
+  left: 16px;
+  /*font-family: 'Raleway', sans-serif;
+  font-family: 'Work Sans', sans-serif;*/
+
+}
+
 .aboutText .background-img {
     max-height: 100vh;
     float: right;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+  }
+
+  .me {
+    padding: 20px
   }

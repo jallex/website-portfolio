@@ -16,15 +16,19 @@
 
   .nav-item {
     display: inline;
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
 
 .home {
     float: left;
     text-align: center;
     padding: calc(.3em + 1vw) calc(.2em + 1.7vw);
-    font-size: calc(.3em + 1.7vw);
-    padding-top: 29px;
+    font-size: 20px;
+    padding-top: 45px;
+}
+
+.nav .navv {
+  float:right;
 }
 
 .home:hover {
@@ -32,10 +36,12 @@
   }
 
 .nav-items {
-    float: right;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: calc(.1em + 1.2vw);
+    font-size: 15px;
+    padding-top: 35px;
+    padding-right:2px;
 }
 
+.card-footer {
+  background-color: #C9886D;
+}
 
