@@ -7,8 +7,6 @@ import { Interaction } from 'three.interaction';
 import pic from "../images/CLICK3.png";
 class Home extends Component {
 
-  // to do: add button that allows wireframe, add orbit controls
-
   componentDidMount() {
       var scene = new THREE.Scene();
       scene.background = new THREE.Color(0xC9886D);
@@ -68,7 +66,8 @@ class Home extends Component {
 
         const interaction = new Interaction(renderer, scene, camera);
 
-     
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth/ 3.5,window.innerHeight/ 3.5);
 
 
       var animate = function () {

@@ -14,6 +14,21 @@
     padding: 20px
 }
 
-.deck2 {
-    padding: 20px
+.code-page img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
+
+.carousel-control-next-icon {
+    filter: invert(1);
+  }
+
+.carousel-control-prev-icon {
+    filter: invert(1);
+  }
+
+  .soliataire-image {
+      width:100%;
+  }

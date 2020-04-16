@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Header, Layout, Navigation, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
 import About from './components/about';
 import DemoReel from './components/demoReel';
@@ -10,6 +9,7 @@ import Artwork from './components/artwork';
 import Contact from './components/contact';
 import Home from './components/home';
 import Navbarg from './components/navbar';
+import Fade from 'react-reveal/Fade';
 
 
 const App = () => {
@@ -18,13 +18,13 @@ const App = () => {
       <div className="navbar">
         <Navbarg/>
         </div><div className = "sections">
-  <div className="div1"> <Home/></div>
+  <div className="div1"> <Home/> </div>
 <div style=
-  {{width: '100%', margin: 0}} className="div2"><About/>
-      </div>
+  {{width: '100%', margin: 0}} className="div2"><Fade><About/></Fade>
+      </div> 
       <div style=
   {{width: '100%', margin: 0}} className="div3">
-      <DemoReel/>
+  <DemoReel/>
       </div>
       <div style=
   {{width: '100%', margin: 0}} className="div4">

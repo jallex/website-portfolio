@@ -82,21 +82,10 @@ class Tile extends React.Component {
       let headerStyle = {};
       let zoom = {};
       // When tile clicked
-      if (this.state.open) {
-          tileStyle = {
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              margin: '0',
-              boxShadow: '0 0 40px 5px rgba(0, 0, 0, 0.3)',
-              transform: 'none'
-          };
-      } else {
           tileStyle = {
             width: 'auto',
             height: '100%'
-          };
-      }
+          }
 
       return (
           <div className="tile">

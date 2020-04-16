@@ -18,7 +18,6 @@ class About extends Component {
             </h4>
             <h4> My intern experiences: 
               <ul>
-              <li>incoming <b>Lucasfilm</b>  intern summer 2020 </li>
               <li><b>Human Movement Lab</b>  spring 2020 (Python, C#, Blender, Unity)</li>
               <li><b>Scout</b>  fall 2019 (React.js) </li>
               <li><b>Bank of America</b> summer 2019 (React.js, Node.js)</li>

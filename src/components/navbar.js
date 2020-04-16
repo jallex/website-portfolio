@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-scroll";
 import './navbar.css';
-import { Navbar } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 class Navbarg extends Component {
     state = {};
     render(){
         return (
             <div className="nav" id="navbar">
-                <Navbar className = "navv">
+                <Navbar expand="md" className = "navv">
+                
         <div className="home">
         <Link
         style={{textDecoration: 'none', color: 'white'}}
@@ -19,6 +20,7 @@ class Navbarg extends Component {
     duration= {500}
 >Home</Link>
 </div>
+<Nav className="ml-auto">
          <ul className="nav-items">
 <li className="nav-item">
 <Link
@@ -92,6 +94,7 @@ style={{textDecoration: 'none', color: 'white'}}
 >Resume</Link>
 </li>
     </ul>
+    </Nav>
     </Navbar>
     </div>
 
