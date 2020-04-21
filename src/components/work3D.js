@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { Card, CardDeck } from "react-bootstrap";
 import './work3D.css';
+import dog from '../images/3D/dog.png';
+import dog2 from '../images/3D/dog2.png';
+import { Player } from 'video-react';
+import "../../node_modules/video-react/dist/video-react.css"; // import css
+import video from '../images/3D/final_video.mp4';
 
 class Work3D extends Component {
   render() {
@@ -8,7 +13,12 @@ class Work3D extends Component {
       <div className="work3D-page" id="work3D"><h1>3D Modeling and Animation</h1>
            <CardDeck className="deck1">
            <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+           <Player
+      playsInline
+      poster={dog2}
+      src={video}
+    />
+    <Card.Img variant="top" src={dog} />
     <Card.Body>
       <Card.Title>Talent Show </Card.Title>
       <Card.Text>
