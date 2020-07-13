@@ -1,3 +1,6 @@
+.navbar {
+  margin-bottom: 20px;
+}
 .nav {
     position: fixed;
     width: 100%;
@@ -24,7 +27,7 @@
     text-align: center;
     padding: calc(.3em + 1vw) calc(.2em + 1.7vw);
     font-size: 20px;
-    padding-top: 45px;
+    padding-top: 60px;
 }
 
 .nav .navv {
@@ -37,7 +40,7 @@
 
 .nav-items {
     font-size: 15px;
-    padding-top: 35px;
+    padding-top: 60px;
     padding-right:2px;
 }
 

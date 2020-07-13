@@ -1,16 +1,20 @@
 import React, { Component, useState } from 'react';
 import { Card, CardDeck, Carousel } from "react-bootstrap";
+import { Player } from 'video-react';
 import './code.css';
-import skelly from '../images/code/dot-skelly.gif';
-import mocap from '../images/code/mocap-clean.gif';
-import mocap2 from '../images/code/mocap-blender.gif';
-import screenshot from '../images/code/screenshot.png';
-import skelmesh from '../images/code/skel-mesh.png';
-import comp2 from '../images/code/Comp2.gif';
+import skelly from '../images/code/labeling/dot-skelly.gif';
+import mocap from '../images/code/labeling/mocap-clean.gif';
+import mocap2 from '../images/code/labeling/mocap-blender.gif';
+import screenshot from '../images/code/labeling/screenshot.png';
+import skelmesh from '../images/code/labeling/skel-mesh.png';
+import demovideo from '../images/code/labeling/DEMO.mp4';
+import comp2 from '../images/code/labeling/Comp2.gif';
 import sheet1 from '../images/code/spreadsheets/Triangular.PNG';
 import sheet2 from '../images/code/spreadsheets/ScrollExample.png';
 import sheet3 from '../images/code/spreadsheets/WorkingInputFile1.png';
 import solitaire from '../images/code/solitaire.PNG';
+import "../../node_modules/video-react/dist/video-react.css"; // import css
+
 
 /* put image carousel with images and gifs inside of image place
 also make a button -> see project! lead to github or other source.. vimeo? 
@@ -119,6 +123,13 @@ class Code extends Component {
       alt="Third slide"
     />
   </Carousel.Item>
+  <Carousel.Item>
+  <Player
+      playsInline
+      // poster={dog2}
+      src={demovideo}
+    />
+    </Carousel.Item>
 </Carousel>
     <Card.Body>
       <Card.Title>Mocap Data clean-up:</Card.Title>
@@ -129,7 +140,11 @@ class Code extends Component {
               <li>Add mesh and armature to mocap data via Python script and Blender</li>
               <li>Use Unity 3D environment and C# to cast an expanding ray and detect collision and label desired trajectory</li>
               </ul> 
-              See demo / see project
+          <div className="Automated-Label">
+          <a href="https://github.com/jallex/Automated-Labeling-Unlabeled-Trajectories" rel="noopener noreferrer" target="_blank">
+          See project!
+          </a>
+          </div>
       </Card.Text>
     </Card.Body>
     <Card.Footer>

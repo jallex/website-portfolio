@@ -8,6 +8,7 @@ class Contact extends Component {
     return(
       <div className="contact-page" id="contact"><h1>Contact</h1>
       <img className= "img" src={pic}/>
+      <div className = "contact-info">Email: jackieallex@gmail.com</div>
       </div>
     )
   }

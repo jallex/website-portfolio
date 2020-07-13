@@ -8,3 +8,9 @@
     padding:25px;
     color: #C9886D; 
 }
+.demo-reel-page .img {
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+  }
