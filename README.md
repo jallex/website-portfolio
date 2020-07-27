@@ -7,11 +7,12 @@ This project was bootstrapped with create-react-app, styling done with CSS and B
 
 To do:
 - Fix about page
+- make a "Read more" button on code 
 - Create demo reel and add it to demo section
 - Render some raytracer examples and add to code section
 - Update all coding cards in general
 - Update 3D Modeling and Animation section
-- Make artwork bigger upon being clicked
+- Make artwork modal upon being clicked
 - Format contact section
 
 

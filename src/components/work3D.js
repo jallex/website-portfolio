@@ -8,7 +8,9 @@ import video from '../images/3D/final_video.mp4';
 import { Card, CardDeck, Carousel } from "react-bootstrap";
 
 class Work3D extends Component {
+  
   render() {
+    
     return(
       <div className="work3D-page" id="work3D"><h1>3D Modeling and Animation</h1>
            <CardDeck className="deck1">

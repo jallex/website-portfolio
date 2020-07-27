@@ -180,13 +180,24 @@ class Code extends Component {
     <Card.Body>
       <Card.Title>Spreadsheet (Mini Excel)</Card.Title>
       <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
+      <ul>
+              <li>Using Java and Swing and the MVC design pattern, I created a working spreadsheet similar to Microsoft Excel and  Google Sheets.  </li>
+              <li>Able to open saved sheets or create a new one.</li>
+              <li>Allows for infinite scrolling.</li>
+              <li>GoF patterns used: Composition, Visitor, Builder, Command, Observor</li>
+              <li>If a value is edited, all cells that reference this cell will also be updated. </li>
+              <li>Cells that contain formulas may be functions of a fixed number of arguments, or of a range of values; they can contain conditionals to select among options; by creating a bunch of similar, consecutive rows they can even simulate fixed-length iteration. Formulas are only restricted to not contain cyclic references. </li>
+              <li>Ability to create a group of spreadsheets and reference between them.</li>
+              <li>The spreadsheet has user mouse, key, and event listeners. For example, the user is able to navigate using the keyboard arrow keys, and click buttons to change selected cells and their contents.</li>
+              <li>Extensive unit testing.</li>
+              </ul> 
+        Project code available upon request.
       </Card.Text>
     </Card.Body>
     <Card.Footer>
     <Card.Text>
         Object-Oriented Programming | Model-View-Controller 
+
       </Card.Text>
     </Card.Footer>
   </Card>
@@ -197,11 +208,14 @@ class Code extends Component {
       alt="First slide"
     />
     <Card.Body>
-      <Card.Title>Pyramid Solitaire (3 versions of models)</Card.Title>
+      <Card.Title>Pyramid Solitaire (3 models)</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
+      <ul>
+              <li>Using Java and the MVC design pattern, I created a solitaire game with 3 different models with different rules- basic, relaxed, and tripeaks.</li>
+              <li>Textual view of game displayed in terminal.</li>
+              <li>Created Mock models for extensive unit testing.</li>
+              </ul> 
+              Code available upon request.
       </Card.Text>
     </Card.Body>
     <Card.Footer>
