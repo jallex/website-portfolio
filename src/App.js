@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
 import About from './components/about';
-import AboutMobile from './components/about-mobile';
 import DemoReel from './components/demoReel';
 import Code from './components/code';
 import Work3D from './components/work3D';
@@ -61,7 +60,7 @@ const App = () => {
         </div><div className = "sections">
         <div className="div1"> <Home/> </div>
 <div style=
-  {{width: '100%', margin: 0}} className="div2"><Fade><AboutMobile/></Fade>
+  {{width: '100%', margin: 0}} className="div2"><Fade><About/></Fade>
       </div> 
       <div style=
   {{width: '100%', margin: 0}} className="div3">
