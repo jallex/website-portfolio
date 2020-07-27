@@ -7,7 +7,6 @@
     background-color: #C9886D; 
     height: 90px; /* how much offset we need in navbar.js line 30*/
 }
-
 .nav-item > .active {
     border-bottom: 2px solid white;
   }

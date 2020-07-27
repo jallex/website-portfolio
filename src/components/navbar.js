@@ -3,10 +3,11 @@ import { Link } from "react-scroll";
 import './navbar.css';
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
+
 class Navbarg extends Component {
     state = {};
     render(){
-        return (
+            return (
             <div className="nav" id="navbar">
                 <Navbar expand="md" className = "navv">
                 
@@ -97,9 +98,8 @@ style={{textDecoration: 'none', color: 'white'}}
     </Nav>
     </Navbar>
     </div>
-
-    );
+            );
+        }
     }
-}
 
 export default Navbarg;

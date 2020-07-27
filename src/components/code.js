@@ -27,6 +27,19 @@ class Code extends Component {
       <div className="code-page" id="code">
         <h1>Coding Projects</h1>
      <CardDeck className="deck1">
+     <Card>
+    <Card.Body>
+      <Card.Title>Raytracer</Card.Title>
+      <Card.Text>
+        WIP
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Card.Text>
+    Graphics Programming
+      </Card.Text>
+    </Card.Footer>
+  </Card>
   <Card>
   <Carousel interval = "100000000000000">
   <Carousel.Item>
@@ -52,7 +65,7 @@ class Code extends Component {
   </Carousel.Item>
 </Carousel>
     <Card.Body>
-      <Card.Title>3D Armature Animation from NumPy Data</Card.Title>
+      <Card.Title>Animated Markerless Mocap Data</Card.Title>
       <Card.Text>
         This is a wider card with supporting text below as a natural lead-in to
         additional content. This content is a little bit longer.
@@ -66,20 +79,7 @@ class Code extends Component {
   </Card>
   <Card>
     <Card.Body>
-      <Card.Title>Raytracer</Card.Title>
-      <Card.Text>
-        WIP
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-    <Card.Text>
-    Graphics Programming
-      </Card.Text>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Body>
-      <Card.Title>Personal Project coming soon???</Card.Title>
+      <Card.Title>Animated Marker Mocap Data</Card.Title>
       <Card.Text>
         WIP
       </Card.Text>

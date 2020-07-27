@@ -1,0 +1,47 @@
+.navbar {
+    margin-bottom: 20px;
+  }
+  
+  .nav-mobile {
+    position: fixed;
+    width: 100%;
+    background-color: #C9886D; 
+    height: 0px;
+  }
+  .nav-item > .active {
+      border-bottom: 2px solid white;
+    }
+  
+  .nav-item:hover {
+      color: black;
+      cursor: pointer;
+    }
+  
+  
+  .home {
+      float: left;
+      text-align: center;
+      padding: calc(.3em + 1vw) calc(.2em + 1.7vw);
+      font-size: 20px;
+      padding-top: 60px;
+  }
+  
+  .nav .navv {
+    float:right;
+  }
+  
+  .home:hover {
+      cursor: pointer;
+    }
+  
+  .nav-items {
+      font-size: 15px;
+      padding-top: 60px;
+      padding-right:2px;
+  }
+  
+  .card-footer {
+    background-color: #C9886D;
+  }
+  
+  
