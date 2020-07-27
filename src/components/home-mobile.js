@@ -5,7 +5,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import { Interaction } from 'three.interaction';
 import pic from "../images/CLICK3.png";
-class Home extends Component {
+class HomeMobile extends Component {
 
   componentDidMount() {
       var scene = new THREE.Scene();
@@ -137,4 +137,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default HomeMobile;

@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
 import About from './components/about';
+import AboutMobile from './components/about-mobile';
 import DemoReel from './components/demoReel';
 import Code from './components/code';
 import Work3D from './components/work3D';
 import Artwork from './components/artwork';
 import Contact from './components/contact';
 import Home from './components/home';
+import HomeMobile from './components/home-mobile';
 import Navbarg from './components/navbar';
 import NavbarMobile from './components/navbar-mobile';
 import Fade from 'react-reveal/Fade';
@@ -23,8 +25,8 @@ const App = () => {
       <div className="navbar">
         <Navbarg/>
         </div><div className = "sections">
-  <div className="div1"> <Home/> </div>
-<div style=
+        <div className="div1"> <Home/> </div>
+        <div style=
   {{width: '100%', margin: 0}} className="div2"><Fade><About/></Fade>
       </div> 
       <div style=
@@ -57,9 +59,9 @@ const App = () => {
       <div className="navbar">
         <NavbarMobile/>
         </div><div className = "sections">
-  <div className="div1"> <Home/> </div>
+        <div className="div1"> <Home/> </div>
 <div style=
-  {{width: '100%', margin: 0}} className="div2"><Fade><About/></Fade>
+  {{width: '100%', margin: 0}} className="div2"><Fade><AboutMobile/></Fade>
       </div> 
       <div style=
   {{width: '100%', margin: 0}} className="div3">

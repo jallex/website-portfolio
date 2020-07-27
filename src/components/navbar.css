@@ -1,9 +1,15 @@
 .navbar {
   margin-bottom: 20px;
+  max-width:100%;
 }
+
+.navbar-default{
+  max-width:100%;
+}
+
 .nav {
     position: fixed;
-    width: 100%;
+    max-width: 100%;
     background-color: #C9886D; 
     height: 90px; /* how much offset we need in navbar.js line 30*/
 }
