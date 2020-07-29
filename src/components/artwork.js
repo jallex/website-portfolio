@@ -21,10 +21,6 @@ import image18 from '../images/My artwork/18.JPG';
 
 class Tiles extends React.Component {
   render() {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
       // Create tile for each item in data array
       // Pass data to each tile and assign a key
       return (
@@ -70,7 +66,9 @@ class Tile extends React.Component {
   _clickHandler(e) {
       e.preventDefault();
       if (this.state.open === false) {
-          handleShow
+        this.setState({
+          open: true
+      });
       } else {
           this.setState({
               open: false
@@ -190,20 +188,6 @@ class Artwork extends Component {
     return(
       <div className="artwork-page" id="artwork"><h1>Artwork and Illustration</h1>
        <Thing data = {data} />
-       <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal>
 </div>
     )
   }
