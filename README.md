@@ -13,6 +13,5 @@ To do:
 - Update all coding cards in general
 - Update 3D Modeling and Animation section
 - Make artwork modal upon being clicked
-- Format contact section
 
 
