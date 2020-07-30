@@ -6,7 +6,7 @@ class DemoReel extends Component {
   render() {
     return(
       <div className="demo-reel-page" id="demo-reel"><h1>Demo Reel</h1>
-      <img className= "img" src={pic}/>
+      <p>Still a work in progress!</p>
       </div>
     )
   }

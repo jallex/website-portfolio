@@ -51,5 +51,9 @@
 #nav-dropdown {
   background-color: #C9886D;
 }
+
+.navbar-brand {
+  margin-left: 1rem;
+}
   
   

@@ -9,51 +9,14 @@ import Artwork from './components/artwork';
 import Contact from './components/contact';
 import Home from './components/home';
 import HomeMobile from './components/home-mobile';
-import NavbarMobile from './components/navbar-mobile';
+import Navbar from './components/navbar';
 import Fade from 'react-reveal/Fade';
 
-function detectMob() {
-  return ( ( window.innerWidth <=  (.3*(window.innerWidth))) );
-}
-
 const App = () => {
-  if(!detectMob){
-    return (
-    <div className="content">
-      <div className = "sections">
-        <div className="div1"> <Home/> </div>
-        <div style=
-  {{width: '100%', margin: 0}} className="div2"><Fade><About/></Fade>
-      </div> 
-      <div style=
-  {{width: '100%', margin: 0}} className="div3">
-  <DemoReel/>
-      </div>
-      <div style=
-  {{width: '100%', margin: 0}} className="div4">
-      <Code/>
-      </div>
-      <div style=
-  {{width: '100%', margin: 0}} className="div5">
-      <Work3D/>
-      </div>
-      <div style=
-  {{width: '100%', margin: 0}} className="div6">
-      <Artwork/>
-      </div>
-      <div style=
-  {{width: '100%', margin: 0}} className="div7">
-      <Contact/>
-      </div>
-      </div>
-</div> 
-  )
-    }
-    else{
       return(
 <div className="content">
       <div className="navbar">
-        <NavbarMobile/>
+        <Navbar/>
         </div><div className = "sections">
         <div className="div1"> <Home/> </div>
 <div style=
@@ -82,7 +45,6 @@ const App = () => {
       </div>
 </div> 
       );
-    }
-};
+}
 
 export default App;

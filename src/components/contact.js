@@ -14,7 +14,6 @@ class Contact extends Component {
   render() {
     return(
       <div className="contact-page" id="contact">
-        <img className= "img" src={pic}/>
         <h1>Contact</h1>
         {this.state.showMessage && <p>jackieallex@gmail.com</p>}
                     <div className="social-links">
@@ -32,6 +31,7 @@ class Contact extends Component {
           </a>
           </div>
           </div>
+          <img className= "img" src={pic}/> <div className="visiting"><p>Thanks for visiting!</p></div>
       </div>
     )
   }

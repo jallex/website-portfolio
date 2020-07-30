@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import { Link } from "react-scroll";
-import './navbar-mobile.css';
+import './navbar.css';
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 
-class NavbarMobile extends Component {
+class Navbarg extends Component {
     state = {};
     render(){
             return (
                     <div className="nav-mobile" id="navbar2"> 
                     <Navbar expand="md" className = "navv" variant = "light">
-                    <Navbar.Brand href="home" style={{textDecoration: 'none', color: 'white'}}>Home</Navbar.Brand>
+                    <Navbar.Brand href="home" style={{textDecoration: 'none', color: 'white'}} >Home</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" style={{textDecoration: 'none', color: 'white'}}/>
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className = "nav-items navbar-default">
@@ -94,4 +94,4 @@ class NavbarMobile extends Component {
             }
         }
 
-export default NavbarMobile;
+export default Navbarg;

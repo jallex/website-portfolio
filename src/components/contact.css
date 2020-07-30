@@ -14,16 +14,23 @@
 }
 
 .contact-page p {
-  text-align: center;
   margin: 0 auto;
     color: #C9886D; 
-  padding:25px;
+    padding-top: 10px;
+  padding-bottom:25px;
+  font-size: 1.5em;
+}
+
+.visiting p{
+  font-family: 'Nanum Pen Script', cursive;
+  text-align: center;
 }
 
 .contact-page .img {
   height: 200px;
   width: auto;
   padding: 20px;
+  padding-bottom: 0px;
   align-self: center;
 }
 
@@ -44,5 +51,5 @@
 .social-links i{
   color: #C9886D; 
   font-size: 3em;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
