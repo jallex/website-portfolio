@@ -9,7 +9,6 @@ import Artwork from './components/artwork';
 import Contact from './components/contact';
 import Home from './components/home';
 import HomeMobile from './components/home-mobile';
-import Navbarg from './components/navbar';
 import NavbarMobile from './components/navbar-mobile';
 import Fade from 'react-reveal/Fade';
 
@@ -21,9 +20,7 @@ const App = () => {
   if(!detectMob){
     return (
     <div className="content">
-      <div className="navbar">
-        <Navbarg/>
-        </div><div className = "sections">
+      <div className = "sections">
         <div className="div1"> <Home/> </div>
         <div style=
   {{width: '100%', margin: 0}} className="div2"><Fade><About/></Fade>

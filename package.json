@@ -16,6 +16,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16",
+    "read-more-react": "^1.0.10",
     "redux": "^4.0.5",
     "stats.js": "^0.17.0",
     "style-loader": "^1.1.4",

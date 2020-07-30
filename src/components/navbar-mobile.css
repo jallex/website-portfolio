@@ -21,6 +21,10 @@
       color: black;
       cursor: pointer;
     }
+
+    .navbar-header {
+      background-color: #F16E10;
+    }
   
   
   .home {
@@ -31,22 +35,21 @@
       padding-top: 60px;
   }
   
-  .nav .navv {
-    float:right;
+.navv {
+    background-color: #C9886D;
   }
   
   .home:hover {
       cursor: pointer;
     }
   
-  .nav-items {
-      font-size: 15px;
-      padding-top: 60px;
-      padding-right:2px;
-  }
   
   .card-footer {
     background-color: #C9886D;
   }
+
+#nav-dropdown {
+  background-color: #C9886D;
+}
   
   

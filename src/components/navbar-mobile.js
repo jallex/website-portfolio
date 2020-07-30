@@ -9,13 +9,12 @@ class NavbarMobile extends Component {
     render(){
             return (
                     <div className="nav-mobile" id="navbar2"> 
-                    <Navbar expand="md" className = "navv">
+                    <Navbar expand="md" className = "navv" variant = "light">
                     <Navbar.Brand href="home" style={{textDecoration: 'none', color: 'white'}}>Home</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" style={{textDecoration: 'none', color: 'white'}}/>
                 <Navbar.Collapse id="basic-navbar-nav">
-                <Nav >
-                <ul className="nav-items-mobile">
-                <li className="nav-item">
+                <Nav className = "nav-items navbar-default">
+                <NavDropdown.Item className="nav-item" id="nav-dropdown">
                 <Link
                 style={{textDecoration: 'none', color: 'white'}}
                 activeClass="active"
@@ -25,8 +24,9 @@ class NavbarMobile extends Component {
                 offset={-50}
                 duration= {500}
                 >About</Link>
-                </li>
-                <li className="nav-item">
+                </NavDropdown.Item>
+
+                <NavDropdown.Item className="nav-item" id="nav-dropdown">
                 <Link
                 style={{textDecoration: 'none', color: 'white'}}
                 activeClass="active"
@@ -36,8 +36,8 @@ class NavbarMobile extends Component {
                 offset={-50}
                 duration= {500}
                 >Demo Reel</Link>
-                </li>
-                <li className="nav-item">
+                </NavDropdown.Item>
+                <NavDropdown.Item className="nav-item" id="nav-dropdown">
                 <Link
                 style={{textDecoration: 'none', color: 'white'}}
                 activeClass="active"
@@ -47,8 +47,8 @@ class NavbarMobile extends Component {
                 offset={-50}
                 duration= {500}
                 >Code</Link>
-                </li>
-                <li className="nav-item">
+                </NavDropdown.Item>
+                <NavDropdown.Item className="nav-item" id="nav-dropdown">
                 <Link
                 style={{textDecoration: 'none', color: 'white'}}
                 activeClass="active"
@@ -58,8 +58,8 @@ class NavbarMobile extends Component {
                 offset={-50}
                 duration= {500}
                 >3D Modeling and Animation</Link>
-                </li>
-                <li className="nav-item">
+                </NavDropdown.Item>
+                <NavDropdown.Item className="nav-item" id="nav-dropdown">
                 <Link
                 style={{textDecoration: 'none', color: 'white'}}
                 activeClass="active"
@@ -69,24 +69,23 @@ class NavbarMobile extends Component {
                 offset={-50}
                 duration= {500}
                 >Artwork</Link>
-                </li>
-                <li className="nav-item">
+                </NavDropdown.Item>
+                <NavDropdown.Item className="nav-item" id="nav-dropdown">
                 <Link
                 style={{textDecoration: 'none', color: 'white'}}
                 activeClass="active"
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={500}
                 duration= {500}
                 >Contact</Link>
-                </li>
-                <li className="nav-item">
+                </NavDropdown.Item>
+                <NavDropdown.Item className="nav-item" id="nav-dropdown">
                 <Link
                 style={{textDecoration: 'none', color: 'white'}}
                 >Resume</Link>
-                </li>
-                </ul>
+                </NavDropdown.Item>
                 </Nav>
                 </Navbar.Collapse>
                 </Navbar>

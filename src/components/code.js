@@ -13,6 +13,7 @@ import sheet1 from '../images/code/spreadsheets/Triangular.PNG';
 import sheet2 from '../images/code/spreadsheets/ScrollExample.png';
 import sheet3 from '../images/code/spreadsheets/WorkingInputFile1.png';
 import solitaire from '../images/code/solitaire.PNG';
+import ReadMoreReact from 'read-more-react';
 import "../../node_modules/video-react/dist/video-react.css"; // import css
 
 
@@ -21,8 +22,8 @@ also make a button -> see project! lead to github or other source.. vimeo?
 */
 
 
-class Code extends Component {
-  render() {
+function Code() {
+
     return(
       <div className="code-page" id="code">
         <h1>Coding Projects</h1>
@@ -180,17 +181,26 @@ class Code extends Component {
     <Card.Body>
       <Card.Title>Spreadsheet (Mini Excel)</Card.Title>
       <Card.Text>
-      <ul>
-              <li>Using Java and Swing and the MVC design pattern, I created a working spreadsheet similar to Microsoft Excel and  Google Sheets.  </li>
-              <li>Able to open saved sheets or create a new one.</li>
-              <li>Allows for infinite scrolling.</li>
-              <li>GoF patterns used: Composition, Visitor, Builder, Command, Observor</li>
-              <li>If a value is edited, all cells that reference this cell will also be updated. </li>
-              <li>Cells that contain formulas may be functions of a fixed number of arguments, or of a range of values; they can contain conditionals to select among options; by creating a bunch of similar, consecutive rows they can even simulate fixed-length iteration. Formulas are only restricted to not contain cyclic references. </li>
-              <li>Ability to create a group of spreadsheets and reference between them.</li>
-              <li>The spreadsheet has user mouse, key, and event listeners. For example, the user is able to navigate using the keyboard arrow keys, and click buttons to change selected cells and their contents.</li>
-              <li>Extensive unit testing.</li>
-              </ul> 
+<ReadMoreReact text={
+ "\u2B24 Using Java and Swing and the MVC design pattern, I created a working spreadsheet similar to Microsoft Excel and  Google Sheets."
+/*** 
+ * \u2B24 Able to open saved sheets or create a new one. 
+<li>Allows for infinite scrolling.</li>
+<li>GoF patterns used: Composition, Visitor, Builder, Command, Observor</li>
+<li>If a value is edited, all cells that reference this cell will also be updated. </li>
+<li>Cells that contain formulas may be functions of a fixed number of arguments, or of a range of values; they can contain conditionals to select among options; by creating a bunch of similar, consecutive rows they can even simulate fixed-length iteration. Formulas are only restricted to not contain cyclic references. </li>
+<li>Ability to create a group of spreadsheets and reference between them.</li>
+<li>The spreadsheet has user mouse, key, and event listeners. For example, the user is able to navigate using the keyboard arrow keys, and click buttons to change selected cells and their contents.</li>
+<li>Extensive unit testing.</li>
+</ul>
+*/ } 
+min={5}
+ideal={10}
+max={15}
+readMoreText = {"read more!"}
+/>
+
+
         Project code available upon request.
       </Card.Text>
     </Card.Body>
@@ -227,7 +237,6 @@ class Code extends Component {
 </CardDeck>
 </div>
     )
-  }
 }
 
 export default Code;
