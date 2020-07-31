@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-scroll";
 import './navbar.css';
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import resume from '../images/Resume.pdf';
 
 
 class Navbarg extends Component {
@@ -83,7 +84,7 @@ class Navbarg extends Component {
                 </NavDropdown.Item>
                 </Nav>
                 <div className="nav-item-link">
-                <a href="https://drive.google.com/file/d/1BZpDbMBOQptANWlNUhpqifvvJKtY4wSN/view" target="_blank" style={{textDecoration: 'none', color: 'white'}}>Resume</a>
+                <a href={resume} target="_blank" style={{textDecoration: 'none', color: 'white'}}>Resume</a>
                 </div>
                 </Navbar.Collapse>
                 </Navbar>
