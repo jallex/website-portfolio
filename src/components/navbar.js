@@ -81,12 +81,10 @@ class Navbarg extends Component {
                 duration= {500}
                 >Contact</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item className="nav-item" id="nav-dropdown">
-                <Link
-                style={{textDecoration: 'none', color: 'white'}}
-                >Resume</Link>
-                </NavDropdown.Item>
                 </Nav>
+                <div className="nav-item-link">
+                <a href="https://drive.google.com/file/d/1BZpDbMBOQptANWlNUhpqifvvJKtY4wSN/view" target="_blank" style={{textDecoration: 'none', color: 'white'}}>Resume</a>
+                </div>
                 </Navbar.Collapse>
                 </Navbar>
                 </div>
