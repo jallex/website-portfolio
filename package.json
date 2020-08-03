@@ -21,6 +21,7 @@
     "stats.js": "^0.17.0",
     "style-loader": "^1.1.4",
     "three": "^0.115.0",
+    "three-orbitcontrols": "^2.110.3",
     "three.interaction": "^0.2.2",
     "video-react": "^0.14.1"
   },

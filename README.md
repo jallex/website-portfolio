@@ -12,5 +12,6 @@ To do:
 - Update 3D Modeling and Animation section
 - Render some raytracer examples and add to code section
 - Create demo reel and add it to demo section
+- animate "click" with wobble lines
 
 
