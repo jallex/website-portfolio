@@ -16,22 +16,18 @@ import solitaire from '../images/code/solitaire.PNG';
 import "../../node_modules/video-react/dist/video-react.css"; // import css
 
 
-/* put image carousel with images and gifs inside of image place
-also make a button -> see project! lead to github or other source.. vimeo? 
-*/
-
-
 class Code extends Component {
 
 state = {
   showMessageSpreadsheet: false,
+  showMessageAutoLabel: false
 }
 onButtonClickHandler(box){
-console.log(box);
 if(box == "spreadsheet"){
-  console.log(this.state.showMessageSpreadsheet);
  this.setState({showMessageSpreadsheet: !this.state.showMessageSpreadsheet});
- console.log(this.state.showMessageSpreadsheet);
+}
+if(box == "autolabel"){
+  this.setState({showMessageAutoLabel: !this.state.showMessageAutoLabel});
 }
 }
 
@@ -52,7 +48,11 @@ render() {
     <Card.Body>
       <Card.Title>Raytracer</Card.Title>
       <Card.Text>
-        WIP
+        <ul>
+          <li>Renders realistic images through ray tracing techniques on 3D scenes.</li>
+          <li>Used C++ to implement Vector3 math operations, rays, shaders, lights, geometry in a scene,
+normal determination, antialiasing, materials with refraction and reflection, and cameras.</li>
+        </ul>
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -86,7 +86,7 @@ render() {
   </Carousel.Item>
 </Carousel>
     <Card.Body>
-      <Card.Title>Animated Markerless Mocap Data</Card.Title>
+      <Card.Title>Markerless Mocap Data Animation</Card.Title>
       <Card.Text>
         This is a wider card with supporting text below as a natural lead-in to
         additional content. This content is a little bit longer.
@@ -100,7 +100,7 @@ render() {
   </Card>
   <Card>
     <Card.Body>
-      <Card.Title>Animated Marker Mocap Data</Card.Title>
+      <Card.Title>Marker Mocap Data Animation</Card.Title>
       <Card.Text>
         WIP
       </Card.Text>
@@ -156,11 +156,15 @@ render() {
       <Card.Title>Mocap Data clean-up:</Card.Title>
       <Card.Title>Autolabel Unlabeled Trajectories</Card.Title>
       <Card.Text>
-      <ul>
-              <li>During the motion capture tracking session, when the cameras lose track of a marker, even for a single frame, the system creates a whole new trajectory for the marker once it is visible again. The system cannot identify that the previous trajectory and the new one belong to the same marker, and these trajectories need to be connected, and I have done so utilizing the mocap data and rgb camera frustum information such as far and near planes.</li>
-              <li>Add mesh and armature to mocap data via Python script and Blender</li>
-              <li>Use Unity 3D environment and C# to cast an expanding ray and detect collision and label desired trajectory</li>
-              </ul> 
+      <ul class="my-list-style">
+              <li>Created a system to identify unlabeled trajectories that belong to the same marker during mocap data collection session, and combine them into a single labeled trajectory.</li>
+              <li>Pinpoint same marker trajectories using rgb camera frustum information such as far and near planes</li>
+              </ul>
+              {this.state.showMessageAutoLabel && <ul class="my-list-style">
+              <li>Add mesh and armature to mocap data via Python script and Blender to create visualization</li>
+              <li>Use Unity 3D environment and C# to cast an expanding ray, detect collision, and label desired trajectory</li>
+              </ul>}
+              <i onClick={() => this.onButtonClickHandler('autolabel')} className = "more-button" aria-hidden="true">{this.displayText(this.state.showMessageAutoLabel)}</i>
           <div className="Automated-Label">
           <a href="https://github.com/jallex/Automated-Labeling-Unlabeled-Trajectories" rel="noopener noreferrer" target="_blank">
           See project!
@@ -201,19 +205,17 @@ render() {
     <Card.Body>
       <Card.Title>Spreadsheet (Mini Excel)</Card.Title>
       <Card.Text>
-       <ul>
+       <ul class="my-list-style">
 <li>Using Java and Swing and the MVC design pattern, I created a working spreadsheet similar to Microsoft Excel and  Google Sheets."
 Able to open saved sheets or create a new one. </li>
 <li>Allows for infinite scrolling.</li>
 <li>GoF patterns used: Composition, Visitor, Builder, Command, Observor</li></ul>
-{this.state.showMessageSpreadsheet && <ul><li>If a value is edited, all cells that reference this cell will also be updated. </li>
+{this.state.showMessageSpreadsheet && <ul class="my-list-style"><li>If a value is edited, all cells that reference this cell will also be updated. </li>
 <li>Cells that contain formulas may be functions of a fixed number of arguments, or of a range of values; they can contain conditionals to select among options; by creating a bunch of similar, consecutive rows they can even simulate fixed-length iteration. Formulas are only restricted to not contain cyclic references. </li>
 <li>Ability to create a group of spreadsheets and reference between them.</li>
 <li>The spreadsheet has user mouse, key, and event listeners. For example, the user is able to navigate using the keyboard arrow keys, and click buttons to change selected cells and their contents.</li>
 <li>Extensive unit testing.</li></ul>}
-                      <div className="email">
-        <i onClick={() => this.onButtonClickHandler('spreadsheet')} aria-hidden="true">{this.displayText(this.state.showMessageSpreadsheet)}</i>
-</div>
+<i onClick={() => this.onButtonClickHandler('spreadsheet')} className = "more-button" aria-hidden="true">{this.displayText(this.state.showMessageSpreadsheet)}</i>
 
         Project code available upon request.
       </Card.Text>

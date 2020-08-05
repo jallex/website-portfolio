@@ -40,3 +40,15 @@
     letter-spacing: 1px;
     cursor: pointer;
   }
+
+  .more-button{
+    color: #007BFF;
+    display:block;
+    cursor: pointer;  }
+
+.my-list-style{
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
