@@ -241,7 +241,7 @@ Able to open saved sheets or create a new one. </li>
               <li>Textual view of game displayed in terminal.</li>
               <li>Created Mock models for extensive unit testing.</li>
               </ul> 
-              Code available upon request.
+              Project Code available upon request.
       </Card.Text>
     </Card.Body>
     <Card.Footer>

@@ -5,6 +5,9 @@
 
   .navbar-default{
     max-width:100%;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 2vh;
+    padding-top: 6px;
   }
   
   .nav-mobile {
@@ -21,10 +24,6 @@
   .nav-item:hover {
       color: black;
       cursor: pointer;
-    }
-
-    .navbar-header {
-      background-color: #F16E10;
     }
   
   
@@ -43,11 +42,6 @@
   .home:hover {
       cursor: pointer;
     }
-  
-  
-  .card-footer {
-    background-color: #C9886D;
-  }
 
 #nav-dropdown {
   background-color: #C9886D;
@@ -59,6 +53,9 @@
 
 .nav-item-link {
   padding-left: 20px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 2vh;
+  padding-top: 6px;
 }
   
   
