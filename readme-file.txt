@@ -6,6 +6,8 @@ Welcome to the code for my portfolio website (a current work in progress)!
 This project was made with create-react-app, styling done with CSS and Bootstrap and 3D components done with Three.js
 
 To do:
+- fix styling on deployed site
+- make a loading still image of 3d 
 - make a "Read more" button on code 
 - Make artwork modal upon being clicked
 - Update all coding cards in general

@@ -34,6 +34,9 @@ class Home extends Component {
 
       var mesh;
 
+      // var manager = new THREE.LoadingManager();
+      // new THREE.ImageLoader(manager).load('http://placehold.it/');
+
       let loader = new GLTFLoader();
       loader.load(
         "/orange-model2.glb",
