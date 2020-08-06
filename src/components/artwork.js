@@ -18,7 +18,6 @@ import image16 from '../images/My artwork/16.JPG';
 import image17 from '../images/My artwork/17.jpg';
 import image18 from '../images/My artwork/18.JPG';
 
-
 class Tiles extends React.Component {
   render() {
       // Create tile for each item in data array
@@ -66,9 +65,9 @@ class Tile extends React.Component {
   _clickHandler(e) {
       e.preventDefault();
       if (this.state.open === false) {
-        this.setState({
-          open: true
-      });
+          this.setState({
+              open: true
+          });
       } else {
           this.setState({
               open: false
@@ -82,10 +81,24 @@ class Tile extends React.Component {
       let headerStyle = {};
       let zoom = {};
       // When tile clicked
+      if (this.state.open) {
+          tileStyle = {
+              position: 'fixed',
+              top: '0%',
+              left: '0%',
+              margin: '0',
+              boxShadow: '0 0 40px 5px rgba(0, 0, 0, 0.3)',
+              transform: 'none',
+              height: '50vh',
+              width: 'auto'
+
+          };
+      } else {
           tileStyle = {
             width: 'auto',
-            height: '100%'
-          }
+            height: '100%'
+          };
+      }
 
       return (
           <div className="tile">
@@ -111,7 +124,12 @@ class Thing extends React.Component {
 }
 
 class Artwork extends Component {
+  state = { modalIsOpen: false, photoIndex:0 }
+  toggleModal = () => {
+    this.setState(state => ({ modalIsOpen: !state.modalIsOpen }));
+  }
   render() {
+    const { modalIsOpen } = this.state;
     const data = [ {
       id: 2,
       name: "Forest",
@@ -187,8 +205,9 @@ class Artwork extends Component {
     }];
     return(
       <div className="artwork-page" id="artwork"><h1>Artwork and Illustration</h1>
-       <Thing data = {data} />
-</div>
+      
+      <Thing data = {data} />
+      </div>
     )
   }
 }

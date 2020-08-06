@@ -13,6 +13,11 @@ import sheet1 from '../images/code/spreadsheets/Triangular.PNG';
 import sheet2 from '../images/code/spreadsheets/ScrollExample.png';
 import sheet3 from '../images/code/spreadsheets/WorkingInputFile1.png';
 import solitaire from '../images/code/solitaire.PNG';
+import markerless1 from '../images/code/markerless/markerless1.png';
+import markerless2 from '../images/code/markerless/markerless2.gif';
+import markerless3 from '../images/code/markerless/markerless3.gif';
+import marker1 from '../images/code/marker/marker1.png';
+import marker2 from '../images/code/marker/marker3.gif';
 import "../../node_modules/video-react/dist/video-react.css"; // import css
 
 
@@ -66,21 +71,21 @@ normal determination, antialiasing, materials with refraction and reflection, an
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={skelmesh}
+      src={markerless1}
       alt="First slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block h-80"
-      src={comp2}
-      alt="Third slide"
+      className="d-block w-100"
+      src={markerless2}
+      alt="Second slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
+      className="d-block h-100"
+      src={markerless3}
       alt="Third slide"
     />
   </Carousel.Item>
@@ -88,8 +93,17 @@ normal determination, antialiasing, materials with refraction and reflection, an
     <Card.Body>
       <Card.Title>Markerless Mocap Data Animation</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
+      <ul class="my-list-style">
+              <li>Tracked human body parts using markerless mocap system on rgb video and performed 3D reconstruction on 2D video coordinates.</li>
+              <li>Created 3D animation of human skeleton and objects such as juggling balls using Python and Blender API</li>   </ul>
+              {this.state.showMessageAutoLabel && <ul class="my-list-style">
+              <li>Using API, created empties at each marker location, connected them with bones, rigged armature to custom mesh, added materials, lighting 
+                cameras.</li>
+              </ul>}
+              <i onClick={() => this.onButtonClickHandler('autolabel')} className = "more-button" aria-hidden="true">{this.displayText(this.state.showMessageAutoLabel)}</i>
+              <a href="https://github.com/MatthisLab/VisualizationGoProMocap" rel="noopener noreferrer" target="_blank">
+          See project!
+          </a>
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -99,10 +113,37 @@ normal determination, antialiasing, materials with refraction and reflection, an
     </Card.Footer>
   </Card>
   <Card>
+  <Carousel interval = "100000000000000">
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={marker1}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={marker2}
+      alt="Second slide"
+    />
+  </Carousel.Item>
+</Carousel>
     <Card.Body>
       <Card.Title>Marker Mocap Data Animation</Card.Title>
       <Card.Text>
-        WIP
+      <ul class="my-list-style">
+              <li>Using Python and the Blender API, translated marker mocap data into 3D environment with animated human skeleton.</li>
+              <li>Using API, created an animated armature with keyframed data for each bone, created mesh and parented to armature, applied material and lighting to scene, 
+                incorporated force plate data, matched frame rates, rendered out frames </li>   </ul>
+              {this.state.showMessageAutoLabel && <ul class="my-list-style">
+              <li> Calculated vectors and matrices related to position and rotation quaternions in 3D space, performed calibrations, projected rays, manipulated cameras and rigid bodies.</li>
+              <li>Wrote post-processing software to create fluid pipeline converting across different data file formats.</li>
+              </ul>}
+              <i onClick={() => this.onButtonClickHandler('autolabel')} className = "more-button" aria-hidden="true">{this.displayText(this.state.showMessageAutoLabel)}</i>
+              <a href="https://github.com/MatthisLab/Mocap-Cyr-Wheel" rel="noopener noreferrer" target="_blank">
+          See project!
+          </a>
       </Card.Text>
     </Card.Body>
     <Card.Footer>
