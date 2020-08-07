@@ -14,7 +14,7 @@ import sheet2 from '../images/code/spreadsheets/ScrollExample.png';
 import sheet3 from '../images/code/spreadsheets/WorkingInputFile1.png';
 import solitaire from '../images/code/solitaire.PNG';
 import markerless1 from '../images/code/markerless/markerless1.png';
-import markerless2 from '../images/code/markerless/markerless2.gif';
+import markerless2 from '../images/code/markerless/markerless2.1.gif';
 import markerless3 from '../images/code/markerless/markerless3.gif';
 import marker1 from '../images/code/marker/marker1.png';
 import marker2 from '../images/code/marker/marker3.gif';
