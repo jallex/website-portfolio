@@ -20,6 +20,7 @@ import image18 from '../images/My artwork/18.JPG';
 import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
 import "react-popupbox/dist/react-popupbox.css"
 
+
 class Tiles extends React.Component {
   render() {
       // Create tile for each item in data array
@@ -80,7 +81,7 @@ class Tile extends React.Component {
   openPopupbox(img) {
     const content = (
       <div>
-       <img className="background-img" src={img} height="800" width="auto"/>
+       <img className="modal-img" src={img} height='800' width='auto'/>
       </div>
     )
     PopupboxManager.open({ content })

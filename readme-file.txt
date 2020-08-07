@@ -16,3 +16,6 @@ nice to have:
 - Fix about page on window resize
 - fix styling on deployed site
 - make a loading still image of 3d 
+-fix image modal for mobile
+
+
