@@ -7,9 +7,7 @@ This project was made with create-react-app, styling done with CSS and Bootstrap
 
 To do:
 need:
-- Make artwork modal upon being clicked
 - Update 3D Modeling and Animation section
-
 - Render some raytracer examples and add to code section
 - Create demo reel and add it to demo section
 
