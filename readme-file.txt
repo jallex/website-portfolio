@@ -18,4 +18,6 @@ nice to have:
 - make a loading still image of 3d 
 -fix image modal for mobile
 
+blah 
+
 
