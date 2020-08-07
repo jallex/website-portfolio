@@ -4,7 +4,7 @@ import dog from '../images/3D/dog.png';
 import dog2 from '../images/3D/dog2.png';
 import { Player } from 'video-react';
 import "../../node_modules/video-react/dist/video-react.css"; // import css
-import video from '../images/3D/final_video.mp4';
+import video from '../images/3D/talent_show.mp4';
 import { Card, CardDeck, Carousel } from "react-bootstrap";
 
 class Work3D extends Component {

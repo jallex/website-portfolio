@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import './artwork.css';
 import image1 from '../images/My artwork/1.png';
 import image2 from '../images/My artwork/2.jpg';
@@ -17,6 +17,40 @@ import image15 from '../images/My artwork/15.gif';
 import image16 from '../images/My artwork/16.JPG';
 import image17 from '../images/My artwork/17.jpg';
 import image18 from '../images/My artwork/18.JPG';
+import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
+import "react-popupbox/dist/react-popupbox.css"
+
+import {Modal, Button} from "react-bootstrap";
+
+function Example() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Launch demo modal
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
 
 class Tiles extends React.Component {
   render() {
@@ -65,9 +99,9 @@ class Tile extends React.Component {
   _clickHandler(e) {
       e.preventDefault();
       if (this.state.open === false) {
-          this.setState({
-              open: true
-          });
+        this.setState({
+          open: true
+      });
       } else {
           this.setState({
               open: false
@@ -75,41 +109,49 @@ class Tile extends React.Component {
       }
   }
 
-  render() {
-      // Modify styles based on state values
-      let tileStyle = {};
-      let headerStyle = {};
-      let zoom = {};
-      // When tile clicked
-      if (this.state.open) {
-          tileStyle = {
-              position: 'fixed',
-              top: '0%',
-              left: '0%',
-              margin: '0',
-              boxShadow: '0 0 40px 5px rgba(0, 0, 0, 0.3)',
-              transform: 'none',
-              height: '50vh',
-              width: 'auto'
+  openPopupbox(img) {
+    const content = (
+      <div>
+       <img className="background-img" src={img} height="800" width="auto"/>
+      </div>
+    )
+    PopupboxManager.open({ content })
+    this.setState({
+      open: false
+  });
+  }
 
-          };
-      } else {
-          tileStyle = {
-            width: 'auto',
-            height: '100%'
-          };
-      }
+  render() {
+
+    let tileStyle = {};
+    let headerStyle = {};
+    let zoom = {};
+    // When tile clicked
+        tileStyle = {
+          width: 'auto',
+          height: '100%'
+        };
+
 
       return (
           <div className="tile">
+            {this.state.open && 
               <img
                   onMouseEnter={this._mouseEnter}
                   onMouseLeave={this._mouseLeave}
-                  onClick={this._clickHandler}
                   src={this.props.data.image}
+                  onClick={this._clickHandler}
                   alt={this.props.data.name}
                   style={tileStyle}
-              />
+              /> && this.openPopupbox(this.props.data.image)}
+            {!this.state.open &&  <img
+                  onMouseEnter={this._mouseEnter}
+                  onMouseLeave={this._mouseLeave}
+                  src={this.props.data.image}
+                  onClick={this._clickHandler}
+                  alt={this.props.data.name}
+                  style={tileStyle}
+            /> }
           </div>
       );
   }
@@ -124,12 +166,14 @@ class Thing extends React.Component {
 }
 
 class Artwork extends Component {
-  state = { modalIsOpen: false, photoIndex:0 }
-  toggleModal = () => {
-    this.setState(state => ({ modalIsOpen: !state.modalIsOpen }));
-  }
   render() {
-    const { modalIsOpen } = this.state;
+    const popupboxConfig = {
+      titleBar: {
+        enable: true,
+      },
+      fadeIn: true,
+      fadeInSpeed: 500
+    }
     const data = [ {
       id: 2,
       name: "Forest",
@@ -205,8 +249,8 @@ class Artwork extends Component {
     }];
     return(
       <div className="artwork-page" id="artwork"><h1>Artwork and Illustration</h1>
-      
       <Thing data = {data} />
+      <PopupboxContainer { ...popupboxConfig } />
       </div>
     )
   }
