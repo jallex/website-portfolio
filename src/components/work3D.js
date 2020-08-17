@@ -4,7 +4,7 @@ import dog2 from '../images/3D/dog2.png';
 import { Player } from 'video-react';
 import "../../node_modules/video-react/dist/video-react.css"; // import css
 import video from '../images/3D/talent_show.mp4';
-import { Card, CardDeck, Carousel } from "react-bootstrap";
+import { Card, CardDeck } from "react-bootstrap";
 import chair from '../images/3D/chair_model.png';
 import dog from '../images/3D/dog_model.png';
 

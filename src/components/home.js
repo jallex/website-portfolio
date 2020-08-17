@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './home.css';
 import * as THREE from "three";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import { Interaction } from 'three.interaction';
 import pic from "../images/CLICK3.png";
 class Home extends Component {
@@ -107,12 +106,11 @@ class Home extends Component {
   
 
   render() {
-    var mesh;
     return(
       <div style={{width: '100%', margin: 0, padding: 0}} className="homeText" id="home" alignitems="center">
           <div className="home-grid">
             <div className="image">
-            <img src = {pic} className="fishes"/>
+            <img src = {pic} alt="" className="fishes"/>
             <div ref={ref => (this.mount = ref)} />
             </div>
             <div className="banner-text">

@@ -84,7 +84,7 @@ class Navbarg extends Component {
                 </NavDropdown.Item>
                 </Nav>
                 <div className="nav-item-link">
-                <a href={resume} target="_blank" style={{textDecoration: 'none', color: 'white'}}>Resume</a>
+                <a href={resume} target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'white'}}>Resume</a>
                 </div>
                 </Navbar.Collapse>
                 </Navbar>

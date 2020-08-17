@@ -1,14 +1,10 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import { Card, CardDeck, Carousel } from "react-bootstrap";
-import { Player } from 'video-react';
 import './code.css';
 import skelly from '../images/code/labeling/dot-skelly.gif';
 import mocap from '../images/code/labeling/mocap-clean.gif';
 import mocap2 from '../images/code/labeling/mocap-blender.gif';
 import screenshot from '../images/code/labeling/screenshot.png';
-import skelmesh from '../images/code/labeling/skel-mesh.png';
-import demovideo from '../images/code/labeling/DEMO.mp4';
-import comp2 from '../images/code/labeling/Comp2.gif';
 import sheet1 from '../images/code/spreadsheets/Triangular.PNG';
 import sheet2 from '../images/code/spreadsheets/ScrollExample.png';
 import sheet3 from '../images/code/spreadsheets/WorkingInputFile1.png';
@@ -18,8 +14,6 @@ import markerless2 from '../images/code/markerless/markerless2.1.gif';
 import markerless3 from '../images/code/markerless/markerless3.gif';
 import marker1 from '../images/code/marker/marker1.png';
 import marker2 from '../images/code/marker/marker3.gif';
-import "../../node_modules/video-react/dist/video-react.css"; // import css
-
 
 class Code extends Component {
 
@@ -28,16 +22,16 @@ state = {
   showMessageAutoLabel: false
 }
 onButtonClickHandler(box){
-if(box == "spreadsheet"){
+if(box === "spreadsheet"){
  this.setState({showMessageSpreadsheet: !this.state.showMessageSpreadsheet});
 }
-if(box == "autolabel"){
+if(box === "autolabel"){
   this.setState({showMessageAutoLabel: !this.state.showMessageAutoLabel});
 }
 }
 
 displayText(showMore){
-  if(showMore == true){
+  if(showMore === true){
     return "Show less";
   }
   else {
@@ -184,13 +178,6 @@ normal determination, antialiasing, materials with refraction and reflection, an
       alt="Third slide"
     />
   </Carousel.Item>
-  <Carousel.Item>
-  <Player
-      playsInline
-      // poster={dog2}
-      src={demovideo}
-    />
-    </Carousel.Item>
 </Carousel>
     <Card.Body>
       <Card.Title>Mocap Data clean-up:</Card.Title>

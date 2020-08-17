@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
 import './contact.css';
 import pic from '../images/ornge.png';
 
@@ -31,7 +30,7 @@ class Contact extends Component {
           </a>
           </div>
           </div>
-          <img className= "img" src={pic}/> <div className="visiting"><p>Thanks for visiting!</p></div>
+          <img className= "img" src={pic} alt=""/> <div className="visiting"><p>Thanks for visiting!</p></div>
       </div>
     )
   }

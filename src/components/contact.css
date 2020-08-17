@@ -26,6 +26,7 @@
   text-align: center;
 }
 
+@media only screen and (min-width: 600px) {
 .contact-page .img {
   height: 200px;
   width: auto;
@@ -34,7 +35,18 @@
   align-self: center;
   display:block;
 }
+}
 
+@media only screen and (max-width: 600px) {
+  .contact-page .img {
+    height: 35vw;
+    width: auto;
+    padding: 20px;
+    padding-bottom: 0px;
+    align-self: center;
+    display:block;
+  }
+  }
 .social-links{
   display:flex;
   justify-content: center;

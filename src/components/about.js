@@ -1,22 +1,11 @@
-import React, { Component, useEffect, useState } from 'react';
+import React from 'react';
 import './about.css';
 import pic from '../images/about-back2.png';
-
-function debounce(fn, ms) {
-  let timer;
-  return _ => {
-    clearTimeout(timer);
-    timer = setTimeout(_ => {
-      timer = null;
-      fn.apply(this, arguments);
-    }, ms);
-  };
-}
 
 function About() {
       return(
         <section className="aboutText"  id="about" alignItems="center">
-            <img className="background-img" src={pic}/>
+            <img className="background-img" alt="" src={pic}/>
             <div className = "me">
             <h1>Hello! My name is Jackie, and I'm a developer and animator. </h1>
             <h4>I am an undergrad at Northeastern University studying Computer Science and Media Arts, 

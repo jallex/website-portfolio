@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import './artwork.css';
 import image1 from '../images/My artwork/1.png';
 import image2 from '../images/My artwork/2.jpg';
@@ -81,7 +81,7 @@ class Tile extends React.Component {
   openPopupbox(img) {
     const content = (
       <div>
-       <img className="modal-img" src={img} height='800' width='auto'/>
+       <img className="modal-img" alt="" src={img} height='800' width='auto'/>
       </div>
     )
     PopupboxManager.open({ content })
@@ -93,8 +93,6 @@ class Tile extends React.Component {
   render() {
 
     let tileStyle = {};
-    let headerStyle = {};
-    let zoom = {};
     // When tile clicked
         tileStyle = {
           width: 'auto',

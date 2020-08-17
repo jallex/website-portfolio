@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import { Link } from 'react-router-dom';
 import About from './components/about';
 import DemoReel from './components/demoReel';
 import Code from './components/code';
@@ -8,7 +7,6 @@ import Work3D from './components/work3D';
 import Artwork from './components/artwork';
 import Contact from './components/contact';
 import Home from './components/home';
-import HomeMobile from './components/home-mobile';
 import Navbar from './components/navbar';
 import Fade from 'react-reveal/Fade';
 

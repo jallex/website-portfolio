@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './demoReel.css';
-import pic from '../images/demo-reel/wip.gif';
 
 class DemoReel extends Component {
   render() {
