@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './work3D.css';
 import dog2 from '../images/3D/dog2.png';
-import { Player } from 'video-react';
-import "../../node_modules/video-react/dist/video-react.css"; // import css
-import video from '../images/3D/talent_show.mp4';
 import { Card, CardDeck } from "react-bootstrap";
 import chair from '../images/3D/chair_model.png';
 import dog from '../images/3D/dog_model.png';
@@ -30,17 +27,16 @@ class Work3D extends Component {
     </Card.Footer>
   </Card>
            <Card>
-  <Player
-      playsInline
-      poster={dog2}
-      src={video}
-    />
+           <Card.Img variant="top" src={dog2} />
     <Card.Body>
       <Card.Title>Talent Show </Card.Title>
       <Card.Text>
         Animation created based on the prompt "One act in a talent show" -
-        Character animation, modeling, rigging, UVs, props, materials, lighting all done in Maya.
+        Character animation, modeling, rigging, UVs, props, materials, lighting all done in Maya. 
       </Card.Text>
+      <a href="https://vimeo.com/user107311947/review/448719019/c05bef5d2b" rel="noopener noreferrer" target="_blank">
+          See project!
+          </a>
     </Card.Body>
     <Card.Footer>
     <Card.Text>
