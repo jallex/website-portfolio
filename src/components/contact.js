@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './contact.css';
-import pic from '../images/ornge.png';
 
 class Contact extends Component {
   state = {
@@ -30,7 +29,7 @@ class Contact extends Component {
           </a>
           </div>
           </div>
-          <img className= "img" src={pic} alt=""/> <div className="visiting"><p>Thanks for visiting!</p></div>
+          <img className= "img" src={"https://user-images.githubusercontent.com/44556715/90457110-ad12e880-e0c8-11ea-807e-bb61444e60c6.png"} alt=""/> <div className="visiting"><p>Thanks for visiting!</p></div>
       </div>
     )
   }

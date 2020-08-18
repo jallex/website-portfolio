@@ -3,7 +3,6 @@ import './home.css';
 import * as THREE from "three";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { Interaction } from 'three.interaction';
-import pic from "../images/CLICK3.png";
 class Home extends Component {
 
   componentDidMount() {
@@ -110,7 +109,7 @@ class Home extends Component {
       <div style={{width: '100%', margin: 0, padding: 0}} className="homeText" id="home" alignitems="center">
           <div className="home-grid">
             <div className="image">
-            <img src = {pic} alt="" className="fishes"/>
+            <img src = {"https://user-images.githubusercontent.com/44556715/90459318-f82ffa00-e0ce-11ea-9715-7abbfd1b3450.png"} alt="" className="fishes"/>
             <div ref={ref => (this.mount = ref)} />
             </div>
             <div className="banner-text">

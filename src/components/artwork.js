@@ -1,22 +1,5 @@
 import React, { Component } from 'react';
 import './artwork.css';
-import image1 from '../images/My artwork/1.png';
-import image2 from '../images/My artwork/2.jpg';
-import image3 from '../images/My artwork/3.jpg';
-import image4 from '../images/My artwork/4.JPG';
-import image5 from '../images/My artwork/5.JPG';
-import image6 from '../images/My artwork/6.JPG';
-import image7 from '../images/My artwork/7.JPG';
-import image8 from '../images/My artwork/8.JPG';
-import image9 from '../images/My artwork/9.JPG';
-import image10 from '../images/My artwork/10.JPG';
-import image12 from '../images/My artwork/12.jpeg';
-import image13 from '../images/My artwork/13.gif';
-import image14 from '../images/My artwork/14.gif';
-import image15 from '../images/My artwork/15.gif';
-import image16 from '../images/My artwork/16.JPG';
-import image17 from '../images/My artwork/17.jpg';
-import image18 from '../images/My artwork/18.JPG';
 import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
 import "react-popupbox/dist/react-popupbox.css"
 
@@ -144,75 +127,75 @@ class Artwork extends Component {
     const data = [ {
       id: 2,
       name: "Forest",
-      image: image2
+      image: "https://user-images.githubusercontent.com/44556715/90457269-13980680-e0c9-11ea-8a00-366dae248570.jpg"
     }, {
       id: 3,
       name: "Bottles",
-      image: image3
+      image: "https://user-images.githubusercontent.com/44556715/90457270-13980680-e0c9-11ea-8eb7-6a731c506df7.jpg"
     },
     {
       id: 1,
       name: "Ballet",
-      image: image1
+      image: "https://user-images.githubusercontent.com/44556715/90457265-1266d980-e0c9-11ea-896a-1ad1f15c09d3.png"
     },
     {
       id: 4,
       name: "Dog",
-      image: image4
+      image: "https://user-images.githubusercontent.com/44556715/90457271-13980680-e0c9-11ea-9b35-f6cb875ac530.JPG"
     }, {
       id: 5,
       name: "Fire",
-      image: image5
+      image: "https://user-images.githubusercontent.com/44556715/90457272-14309d00-e0c9-11ea-8611-9a53a58086e7.JPG"
     }, {
       id: 6,
       name: "Water",
-      image: image6
+      image: "https://user-images.githubusercontent.com/44556715/90457274-14309d00-e0c9-11ea-976f-c7e58748c066.JPG"
     }, {
       id: 7,
       name: "Earth",
-      image: image7
+      image: "https://user-images.githubusercontent.com/44556715/90457276-14309d00-e0c9-11ea-9bec-f8ed95268745.JPG"
     }, {
       id: 8,
       name: "Wind",
-      image:image8
+      image:"https://user-images.githubusercontent.com/44556715/90457277-14c93380-e0c9-11ea-8a59-476ec3ef5116.JPG"
     }, {
       id: 9,
       name: "Eye fire",
-      image: image9
+      image: "https://user-images.githubusercontent.com/44556715/90457278-14c93380-e0c9-11ea-85c6-26cd6da189e5.JPG"
     }, {
       id: 10,
       name: "Eye water",
-      image: image10
+      image: "https://user-images.githubusercontent.com/44556715/90457281-1561ca00-e0c9-11ea-9a79-a1cb6bb99a5a.JPG"
     }, {
       id: 12,
       name: "Watch",
-      image: image12
+      image: "https://user-images.githubusercontent.com/44556715/90457282-15fa6080-e0c9-11ea-9480-dcb243ce4c19.jpeg"
     }, 
     {
       id: 17,
       name: "Skeleton",
-      image: image17
+      image: "https://user-images.githubusercontent.com/44556715/90457291-198de780-e0c9-11ea-8d31-01398b290543.jpg"
     },
     {
       id: 16,
       name: "Eggs",
-      image: image16
+      image: "https://user-images.githubusercontent.com/44556715/90457290-18f55100-e0c9-11ea-9478-c803d83f7b43.JPG"
     },{
       id: 13,
       name: "Astro red",
-      image: image13
+      image: "https://user-images.githubusercontent.com/44556715/90457283-15fa6080-e0c9-11ea-90e0-2244e940300d.gif"
     }, {
       id: 14,
       name: "Astro blue",
-      image: image14
+      image: "https://user-images.githubusercontent.com/44556715/90457284-1692f700-e0c9-11ea-9e3d-41e919305763.gif"
     }, {
       id: 15,
       name: "Hand animated",
-      image: image15
+      image: "https://user-images.githubusercontent.com/44556715/90457285-1692f700-e0c9-11ea-900b-24937e305571.gif"
     },  {
       id: 18,
       name: "Hand pencil",
-      image: image18
+      image: "https://user-images.githubusercontent.com/44556715/90457293-198de780-e0c9-11ea-8db8-e5873807ab90.JPG"
     }];
     return(
       <div className="artwork-page" id="artwork"><h1>Artwork and Illustration</h1>

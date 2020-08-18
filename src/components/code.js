@@ -1,18 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardDeck, Carousel } from "react-bootstrap";
 import './code.css';
-import skelly from '../images/code/labeling/dot-skelly.gif';
-import mocap from '../images/code/labeling/mocap-clean.gif';
-import mocap2 from '../images/code/labeling/mocap-blender.gif';
-import screenshot from '../images/code/labeling/screenshot.png';
-import sheet1 from '../images/code/spreadsheets/Triangular.PNG';
-import sheet2 from '../images/code/spreadsheets/ScrollExample.png';
-import sheet3 from '../images/code/spreadsheets/WorkingInputFile1.png';
-import solitaire from '../images/code/solitaire.PNG';
-import markerless1 from '../images/code/markerless/markerless1.png';
 import markerless2 from '../images/code/markerless/markerless2.1.gif';
-import markerless3 from '../images/code/markerless/markerless3.gif';
-import marker1 from '../images/code/marker/marker1.png';
 import marker2 from '../images/code/marker/marker3.gif';
 
 class Code extends Component {
@@ -65,7 +54,7 @@ normal determination, antialiasing, materials with refraction and reflection, an
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={markerless1}
+      src={"https://user-images.githubusercontent.com/44556715/90458262-ebf66d80-e0cb-11ea-8bcd-c47025f13c28.png"}
       alt="First slide"
     />
   </Carousel.Item>
@@ -79,7 +68,7 @@ normal determination, antialiasing, materials with refraction and reflection, an
   <Carousel.Item>
     <img
       className="d-block h-100"
-      src={markerless3}
+      src={"https://user-images.githubusercontent.com/44556715/90458246-df721500-e0cb-11ea-901b-438f2d121317.gif"}
       alt="Third slide"
     />
   </Carousel.Item>
@@ -111,7 +100,7 @@ normal determination, antialiasing, materials with refraction and reflection, an
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={marker1}
+      src={"https://user-images.githubusercontent.com/44556715/90457857-b309c900-e0ca-11ea-9ec1-602af3d1058e.png"}
       alt="First slide"
     />
   </Carousel.Item>
@@ -153,28 +142,28 @@ normal determination, antialiasing, materials with refraction and reflection, an
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={screenshot}
+      src={"https://user-images.githubusercontent.com/44556715/90457756-78079580-e0ca-11ea-867b-bb03d63bd8ef.png"}
       alt="Third slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={skelly}
+      src={"https://user-images.githubusercontent.com/44556715/90457742-6faf5a80-e0ca-11ea-808c-2d07be0804f7.gif"}
       alt="First slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={mocap}
+      src={"https://user-images.githubusercontent.com/44556715/90457644-1ba47600-e0ca-11ea-9348-8288d707c4a8.gif"}
       alt="Third slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="h-50"
-      src={mocap2}
+      src={"https://user-images.githubusercontent.com/44556715/90457677-3676ea80-e0ca-11ea-83f9-283ce580e79c.gif"}
       alt="Third slide"
     />
   </Carousel.Item>
@@ -210,21 +199,21 @@ normal determination, antialiasing, materials with refraction and reflection, an
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={sheet1}
+      src={"https://user-images.githubusercontent.com/44556715/90459185-91124580-e0ce-11ea-9689-bb7cdb551aa4.PNG"}
       alt="First slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={sheet2}
+      src={"https://user-images.githubusercontent.com/44556715/90459184-9079af00-e0ce-11ea-9077-81814ef633ba.png"}
       alt="Third slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={sheet3}
+      src={"https://user-images.githubusercontent.com/44556715/90459186-91aadc00-e0ce-11ea-991e-59c94850d4be.png"}
       alt="Third slide"
     />
   </Carousel.Item>
@@ -257,7 +246,7 @@ Able to open saved sheets or create a new one. </li>
   <Card>
   <img
       className="d-block w-100"
-      src={solitaire}
+      src={"https://user-images.githubusercontent.com/44556715/90459174-8788dd80-e0ce-11ea-9f1c-d7c21e4df6d9.PNG"}
       alt="First slide"
     />
     <Card.Body>

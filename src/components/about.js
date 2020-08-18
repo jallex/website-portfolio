@@ -1,11 +1,10 @@
 import React from 'react';
 import './about.css';
-import pic from '../images/about-back2.png';
 
 function About() {
       return(
         <section className="aboutText"  id="about" alignItems="center">
-            <img className="background-img" alt="" src={pic}/>
+            <img className="background-img" alt="" src={"https://user-images.githubusercontent.com/44556715/90456642-7ee0d900-e0c7-11ea-819d-5522d9baf8d5.png"}/>
             <div className = "me">
             <h1>Hello! My name is Jackie, and I'm a developer and animator. </h1>
             <h4>I am an undergrad at Northeastern University studying Computer Science and Media Arts, 

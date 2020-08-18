@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './work3D.css';
-import dog2 from '../images/3D/dog2.png';
 import { Card, CardDeck } from "react-bootstrap";
-import chair from '../images/3D/chair_model.png';
-import dog from '../images/3D/dog_model.png';
 
 class Work3D extends Component {
   
@@ -13,7 +10,7 @@ class Work3D extends Component {
       <div className="work3D-page" id="work3D"><h1>3D Modeling and Animation</h1>
            <CardDeck className="deck1">
            <Card>
-    <Card.Img variant="top" src={chair} />
+    <Card.Img variant="top" src={"https://user-images.githubusercontent.com/44556715/90456843-f6af0380-e0c7-11ea-86c5-20096f24363f.png"} />
     <Card.Body>
       <Card.Title>Chair 3D model for AR</Card.Title>
       <Card.Text>
@@ -27,7 +24,7 @@ class Work3D extends Component {
     </Card.Footer>
   </Card>
            <Card>
-           <Card.Img variant="top" src={dog2} />
+           <Card.Img variant="top" src={"https://user-images.githubusercontent.com/44556715/90457038-750ba580-e0c8-11ea-889b-40087c6dbdc4.png"} />
     <Card.Body>
       <Card.Title>Talent Show </Card.Title>
       <Card.Text>
@@ -45,7 +42,7 @@ class Work3D extends Component {
     </Card.Footer>
   </Card>
   <Card>
-    <Card.Img variant="top" src={dog} />
+    <Card.Img variant="top" src={"https://user-images.githubusercontent.com/44556715/90456909-1cd4a380-e0c8-11ea-9953-5100731ec972.png"} />
     <Card.Body>
       <Card.Title>Shiba Character Asset</Card.Title>
       <Card.Text>
