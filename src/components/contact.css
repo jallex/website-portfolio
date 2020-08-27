@@ -67,3 +67,7 @@
   font-size: 3em;
   padding-bottom: 30px;
 }
+
+i:hover {
+  cursor:pointer;
+ }

@@ -7,12 +7,9 @@ This project was made with create-react-app, styling done with CSS and Bootstrap
 
 To do:
 need:
-- Make envelope turn into clicker at bottom on mouseover
 - fix modal open mobile
 - fix about page window resize
-- Render some raytracer examples and add to code section
 - Create demo reel and add it to demo section
-- Update resume: specific tech for BOA
 
 nice to have:
 - Make a better See Project! button

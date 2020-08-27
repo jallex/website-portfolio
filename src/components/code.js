@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardDeck, Carousel } from "react-bootstrap";
 import './code.css';
-import markerless2 from '../images/code/markerless/markerless2.1.gif';
-import marker2 from '../images/code/marker/marker3.gif';
 
 class Code extends Component {
 
@@ -33,14 +31,40 @@ render() {
         <h1>Coding Projects</h1>
      <CardDeck className="deck1">
      <Card>
+     <Carousel interval = "100000000000000">
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/91363232-2e096880-e7ca-11ea-8830-abe13dfff70e.png"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/91363259-3c578480-e7ca-11ea-9e96-c32ff6969682.png"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/90033511-8e0df400-dc8d-11ea-883d-ce077dcdc1ec.png"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  </Carousel>
     <Card.Body>
       <Card.Title>Raytracer</Card.Title>
       <Card.Text>
         <ul>
           <li>Renders realistic images through ray tracing techniques on 3D scenes.</li>
-          <li>Used C++ to implement Vector3 math operations, rays, shaders, lights, geometry in a scene,
+          <li>Used C++ to implement space-time raytracing, motion blur, AABBs, BVH volumes, image textures, perlin noise, Vector3 math operations, rays, shaders, lights, geometry in a scene,
 normal determination, antialiasing, materials with refraction and reflection, and cameras.</li>
         </ul>
+        <a href="https://github.com/jallex/Raytracer" rel="noopener noreferrer" target="_blank">
+          See project!
+          </a>
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -61,7 +85,7 @@ normal determination, antialiasing, materials with refraction and reflection, an
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={markerless2}
+      src={"https://user-images.githubusercontent.com/44556715/90645804-662a0d80-e204-11ea-9a15-ef242cf043da.gif"}
       alt="Second slide"
     />
   </Carousel.Item>
@@ -91,7 +115,7 @@ normal determination, antialiasing, materials with refraction and reflection, an
     </Card.Body>
     <Card.Footer>
     <Card.Text>
-        Graphics Programming | Animation
+        Graphics Programming | Research
       </Card.Text>
     </Card.Footer>
   </Card>
@@ -107,7 +131,7 @@ normal determination, antialiasing, materials with refraction and reflection, an
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={marker2}
+      src={"https://user-images.githubusercontent.com/44556715/91449976-c561d080-e849-11ea-809c-4b42e5d14175.gif"}
       alt="Second slide"
     />
   </Carousel.Item>
@@ -130,7 +154,7 @@ normal determination, antialiasing, materials with refraction and reflection, an
     </Card.Body>
     <Card.Footer>
     <Card.Text>
-        Graphics Programming | Animation
+        Graphics Programming | Research
       </Card.Text>
     </Card.Footer>
   </Card>
