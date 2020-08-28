@@ -2,6 +2,7 @@
     background :   #C9886D;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .homeText .home-grid .banner-text {
