@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './work3D.css';
-import { Card, CardDeck } from "react-bootstrap";
+import { Card, CardDeck, Carousel } from "react-bootstrap";
 
 class Work3D extends Component {
   
@@ -8,6 +8,117 @@ class Work3D extends Component {
     
     return(
       <div className="work3D-page" id="work3D"><h1>3D Modeling and Animation</h1>
+
+<CardDeck className="deck1">
+           <Card>
+           <Carousel interval = "100000000000000">
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/99191394-73d72c80-273a-11eb-8c71-954fc65aefc9.jpg"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/99191398-75a0f000-273a-11eb-967f-9a16be7820a9.jpg"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/99191401-76398680-273a-11eb-9a0c-766886960023.jpg"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  </Carousel>
+    <Card.Body>
+      <Card.Title>Kitchen Environment Modeling</Card.Title>
+      <Card.Text>
+       I modeled my kitchen from scratch using real-life reference, done in Maya. Technical execution included utilizing holding edges, and keeping realistic proportions and forms. Shaded with natural surfacing so that metallic objects are more specular, and others are more diffuse.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Card.Text>
+        3D Modeling | Maya | Shading | Environments
+      </Card.Text>
+    </Card.Footer>
+  </Card>
+  <Card>
+           <Carousel interval = "100000000000000">
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/99191394-73d72c80-273a-11eb-8c71-954fc65aefc9.jpg"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/99191398-75a0f000-273a-11eb-967f-9a16be7820a9.jpg"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/99191401-76398680-273a-11eb-9a0c-766886960023.jpg"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  </Carousel>
+    <Card.Body>
+      <Card.Title>Realistic Character Model</Card.Title>
+      <Card.Text>
+       I modeled a character from scratch, done in Maya. I took video game concept art of a character from Horizon Dawn as reference, and modeled as well as textured the body, face, hands, clothes, and entire model. 
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Card.Text>
+        3D Modeling | Maya | Shading | Environments
+      </Card.Text>
+    </Card.Footer>
+  </Card>
+  </CardDeck>
+  <CardDeck className="deck1">
+           <Card>
+           <Card.Img variant="top" src={"https://user-images.githubusercontent.com/44556715/99191831-79824180-273d-11eb-9d95-1856838e3ae3.png"} />
+    <Card.Body>
+      <Card.Title>Game Animations </Card.Title>
+      <Card.Text>
+        Walkcycle, Idle cycle, 
+        Character assets taken from Mixamo. 
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Card.Text>
+        Maya | Animation | Game Development  
+      </Card.Text>
+    </Card.Footer>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src={"https://user-images.githubusercontent.com/44556715/90456909-1cd4a380-e0c8-11ea-9953-5100731ec972.png"} />
+    <Card.Body>
+      <Card.Title>Moon Game </Card.Title>
+      <Card.Text>
+        Moon Game created using Unreal Engine 4, Maya, Substance Painter, and ZBrush in collaboration with 2 other artists for our Animation for Games course. 
+        <a href="https://vimeo.com/user107311947/review/448719019/c05bef5d2b" rel="noopener noreferrer" target="_blank">
+          See project!
+          </a>
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Card.Text>
+        Unreal Engine 4 | Game Development | Maya | Substance Painter | ZBrush
+      </Card.Text>
+    </Card.Footer>
+  </Card>
+  </CardDeck>
+
+
            <CardDeck className="deck1">
            <Card>
     <Card.Img variant="top" src={"https://user-images.githubusercontent.com/44556715/90456843-f6af0380-e0c7-11ea-86c5-20096f24363f.png"} />
@@ -19,7 +130,7 @@ class Work3D extends Component {
     </Card.Body>
     <Card.Footer>
     <Card.Text>
-        3D Model | Shade | UV unwrap | Bake 
+        3D Modeling | Blender | Shading | UV unwrap | Bake 
       </Card.Text>
     </Card.Footer>
   </Card>
@@ -37,7 +148,7 @@ class Work3D extends Component {
     </Card.Body>
     <Card.Footer>
     <Card.Text>
-        Animation | Character Design | Modeling 
+        Animation | Maya | Character Design | Modeling 
       </Card.Text>
     </Card.Footer>
   </Card>
@@ -51,7 +162,7 @@ class Work3D extends Component {
     </Card.Body>
     <Card.Footer>
     <Card.Text>
-        3D Model | Shade | UV unwrap | Bake
+        3D Modeling | Maya | Shading | UV unwrap | Bake
       </Card.Text>
     </Card.Footer>
   </Card>

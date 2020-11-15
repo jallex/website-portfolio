@@ -16,14 +16,16 @@ const App = () => {
       <div className="navbar">
         <Navbar/>
         </div><div className = "sections">
-        <div className="div1"> <Home/> </div>
+        <div className="div1"> <Home/> </div> 
 <div style=
   {{width: '100%', margin: 0}} className="div2"><Fade><About/></Fade>
       </div> 
+       {/*
       <div style=
   {{width: '100%', margin: 0}} className="div3">
   <DemoReel/>
       </div>
+      */}
       <div style=
   {{width: '100%', margin: 0}} className="div4">
       <Code/>
