@@ -27,7 +27,7 @@ class Navbarg extends Component {
                 >About</Link>
                 </NavDropdown.Item>
 
-                <NavDropdown.Item className="nav-item" id="nav-dropdown">
+                {/* <NavDropdown.Item className="nav-item" id="nav-dropdown">
                 <Link
                 style={{textDecoration: 'none', color: 'white'}}
                 activeClass="active"
@@ -37,7 +37,7 @@ class Navbarg extends Component {
                 offset={-50}
                 duration= {500}
                 >Demo Reel</Link>
-                </NavDropdown.Item>
+            </NavDropdown.Item>*/}
                 <NavDropdown.Item className="nav-item" id="nav-dropdown">
                 <Link
                 style={{textDecoration: 'none', color: 'white'}}
