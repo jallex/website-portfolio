@@ -28,6 +28,7 @@
   
   
   .home {
+    font-family: 'Tajawal', sans-serif;
       float: left;
       text-align: center;
       padding: calc(.3em + 1vw) calc(.2em + 1.7vw);

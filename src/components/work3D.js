@@ -35,7 +35,7 @@ class Work3D extends Component {
   </Carousel.Item>
   </Carousel>
     <Card.Body>
-      <Card.Title>Kitchen Environment Modeling</Card.Title>
+      <Card.Title>Kitchen Environment </Card.Title>
       <Card.Text>
        I modeled my kitchen from scratch using real-life reference, done in Maya. Technical execution included utilizing holding edges, and keeping realistic proportions and forms. Shaded with natural surfacing so that metallic objects are more specular, and others are more diffuse.
       </Card.Text>
@@ -51,21 +51,35 @@ class Work3D extends Component {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={"https://user-images.githubusercontent.com/44556715/102714901-d96d8a00-429f-11eb-9d2a-ca3db882abb2.png"}
+      src={"https://user-images.githubusercontent.com/44556715/102717484-9ec01d80-42b0-11eb-9897-7fd2d0ffac50.png"}
       alt="First slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={"https://user-images.githubusercontent.com/44556715/102714927-028e1a80-42a0-11eb-8f44-b7db428f704c.png"}
+      src={"https://user-images.githubusercontent.com/44556715/102717496-b7c8ce80-42b0-11eb-9b24-3f7e60a5ccba.png"}
       alt="First slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={"https://user-images.githubusercontent.com/44556715/99191401-76398680-273a-11eb-9a0c-766886960023.jpg"}
+      src={"https://user-images.githubusercontent.com/44556715/102717393-0c1f7e80-42b0-11eb-9ab9-b9fbc502bb11.gif"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/102717504-c9aa7180-42b0-11eb-8f2b-e71efc169e81.png"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/102717510-d62eca00-42b0-11eb-8678-98cfa4a2f14c.jpg"}
       alt="First slide"
     />
   </Carousel.Item>
@@ -73,7 +87,8 @@ class Work3D extends Component {
     <Card.Body>
       <Card.Title>Character Model</Card.Title>
       <Card.Text>
-       Character modeled from scratch, done in Maya, and textures created with Substance Painter and Photoshop. I took video game concept art of a character from Horizon Zero Dawn as reference, and modeled as well as textured the body, face, hands, clothes, and entire model. 
+       Character modeled from scratch in Maya, and textures created with Substance Painter and Photoshop. <br /> 
+       I took video game concept art of a character from Horizon Zero Dawn as reference, and modeled as well as textured the body, face, hands, clothes, and entire model. 
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -85,12 +100,13 @@ class Work3D extends Component {
   </CardDeck>
   <CardDeck className="deck1">
            <Card>
-           <Card.Img variant="top" src={"https://user-images.githubusercontent.com/44556715/99191831-79824180-273d-11eb-9d95-1856838e3ae3.png"} />
+           <Card.Img variant="top" src={"https://user-images.githubusercontent.com/44556715/102719179-9076ff00-42ba-11eb-8f13-094b661d6a7a.jpg"} />
     <Card.Body>
       <Card.Title>Game Animations </Card.Title>
       <Card.Text>
-        Walkcycle, Idle cycle, 
-        Character assets taken from Mixamo. 
+        Walk cycle, run cycle, idle cycle, and kick animated in Maya for export into Unreal Engine 4.
+        <br />
+        Character asset from Adobe Mixamo. 
       </Card.Text>
     </Card.Body>
     <Card.Footer>
