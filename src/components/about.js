@@ -10,15 +10,15 @@ function About() {
             <h4>I am an undergrad at Northeastern University studying Computer Science and Media Arts, 
               a computer graphics major under the Computer and Information Sciences Department.</h4>
               <h4>I love exploring topics relating graphics, animation, and code! In my freetime I 
-                enjoy drawing (I'm currently working on a comic!), playing guitar, traveling, skating, and spending time outdoors.
+                enjoy drawing, playing guitar, traveling, skateboarding, and spending time outdoors.
               </h4>
               <h4> My intern experiences: 
                 <ul>
-                <li><b>Electronic Arts</b> summer 2021 (Tech Art, assist game engineers and artists by building tools)</li>
-                <li><b>Lucasfilm, ILM</b>  spring 2021 (Core Pipeline Software)</li>
-                <li><b>Human Movement Lab</b>  spring, summer, fall 2020 (Motion Capture engineering, Computer Graphics, Python, C#)</li>
+                <li><b>Electronic Arts</b> incoming summer 2021 (Tech Art Internship)</li>
+                <li><b>Lucasfilm, ILM</b>  spring 2021 (Core Pipeline Software Co-op)</li>
+                <li><b>Human Movement Lab</b>  spring, summer, fall 2020 (Motion Capture engineering, VR, Computer Graphics, Python, C#, Unity, Blender)</li>
                 <li><b>Scout Studio</b>  fall 2019 (React.js, web development, design) </li>
-                <li><b>Bank of America</b> summer 2019 (React.js, Node.js)</li>
+                <li><b>Bank of America</b> summer 2019 (React.js, Node.js, web development)</li>
                 </ul> 
             </h4> 
             </div>

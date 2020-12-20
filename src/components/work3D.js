@@ -22,7 +22,7 @@ class Work3D extends Component {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={"https://user-images.githubusercontent.com/44556715/99191398-75a0f000-273a-11eb-967f-9a16be7820a9.jpg"}
+      src={"https://user-images.githubusercontent.com/44556715/102714720-7fb89000-429e-11eb-9308-cbf302f9b0d8.jpg"}
       alt="First slide"
     />
   </Carousel.Item>
@@ -51,14 +51,14 @@ class Work3D extends Component {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={"https://user-images.githubusercontent.com/44556715/99191394-73d72c80-273a-11eb-8c71-954fc65aefc9.jpg"}
+      src={"https://user-images.githubusercontent.com/44556715/102714901-d96d8a00-429f-11eb-9d2a-ca3db882abb2.png"}
       alt="First slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={"https://user-images.githubusercontent.com/44556715/99191398-75a0f000-273a-11eb-967f-9a16be7820a9.jpg"}
+      src={"https://user-images.githubusercontent.com/44556715/102714927-028e1a80-42a0-11eb-8f44-b7db428f704c.png"}
       alt="First slide"
     />
   </Carousel.Item>
@@ -71,14 +71,14 @@ class Work3D extends Component {
   </Carousel.Item>
   </Carousel>
     <Card.Body>
-      <Card.Title>Realistic Character Model</Card.Title>
+      <Card.Title>Character Model</Card.Title>
       <Card.Text>
-       I modeled a character from scratch, done in Maya. I took video game concept art of a character from Horizon Dawn as reference, and modeled as well as textured the body, face, hands, clothes, and entire model. 
+       Character modeled from scratch, done in Maya, and textures created with Substance Painter and Photoshop. I took video game concept art of a character from Horizon Zero Dawn as reference, and modeled as well as textured the body, face, hands, clothes, and entire model. 
       </Card.Text>
     </Card.Body>
     <Card.Footer>
     <Card.Text>
-        3D Modeling | Maya | Shading | Environments
+        3D Modeling | Maya | Substance Painter | Shading | Character Art
       </Card.Text>
     </Card.Footer>
   </Card>
