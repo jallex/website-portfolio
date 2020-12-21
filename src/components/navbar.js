@@ -11,10 +11,20 @@ class Navbarg extends Component {
             return (
                     <div className="nav-mobile" id="navbar2"> 
                     <Navbar expand="md" className = "navv" variant = "light">
-                    <Navbar.Brand href="home" style={{textDecoration: 'none', color: 'white'}} >Home</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" style={{textDecoration: 'none', color: 'white'}}/>
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className = "nav-items navbar-default">
+                <NavDropdown.Item className="nav-item" id="nav-dropdown">
+                <Link
+                style={{textDecoration: 'none', color: 'white'}}
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration= {500}
+                >Home</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Item className="nav-item" id="nav-dropdown">
                 <Link
                 style={{textDecoration: 'none', color: 'white'}}

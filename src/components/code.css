@@ -22,11 +22,11 @@
     width: 50%;
 }
 
-.carousel-control-next-icon {
+.code-page .carousel-control-next-icon {
     filter: invert(1);
   }
 
-.carousel-control-prev-icon {
+.code-page .carousel-control-prev-icon {
     filter: invert(1);
   }
 
