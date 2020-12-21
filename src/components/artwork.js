@@ -64,7 +64,7 @@ class Tile extends React.Component {
   openPopupbox(img) {
     const content = (
       <div>
-       <img className="modal-img" alt="" src={img} height='800' width='auto'/>
+       <img className="modal-img" alt="" src={img} />
       </div>
     )
     PopupboxManager.open({ content })

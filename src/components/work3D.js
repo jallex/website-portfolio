@@ -37,7 +37,7 @@ class Work3D extends Component {
     <Card.Body>
       <Card.Title>Kitchen Environment </Card.Title>
       <Card.Text>
-       I modeled my kitchen from scratch using real-life reference, done in Maya. Technical execution included utilizing holding edges, and keeping realistic proportions and forms. Shaded with natural surfacing so that metallic objects are more specular, and others are more diffuse.
+       I modeled my kitchen from scratch using real-life reference, done in Maya. Technical execution included utilizing holding edges, and keeping realistic proportions and forms. Shaded with natural surfacing using Arnold AI Standard Surfaces so that metallic objects appear specular, and others diffuse.
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -100,18 +100,54 @@ class Work3D extends Component {
   </CardDeck>
   <CardDeck className="deck1">
            <Card>
-           <Card.Img variant="top" src={"https://user-images.githubusercontent.com/44556715/102719179-9076ff00-42ba-11eb-8f13-094b661d6a7a.jpg"} />
+           <Carousel interval = "100000000000000">
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/102719179-9076ff00-42ba-11eb-8f13-094b661d6a7a.jpg"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/102734961-348a9580-430f-11eb-8090-d76b2c5b7225.gif"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/102735172-b67abe80-430f-11eb-822d-8c4fc720be8b.gif"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/102735342-22f5bd80-4310-11eb-8241-6639c351a151.gif"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/102734786-ac0bf500-430e-11eb-9bdd-4617593cf5fa.gif"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  </Carousel>
     <Card.Body>
       <Card.Title>Game Animations </Card.Title>
       <Card.Text>
         Walk cycle, run cycle, idle cycle, and kick animated in Maya for export into Unreal Engine 4.
         <br />
-        Character asset from Adobe Mixamo. 
+        Rigged character asset from Adobe Mixamo. 
       </Card.Text>
     </Card.Body>
     <Card.Footer>
     <Card.Text>
-        Maya | Animation | Game Development  
+        Maya | Game Animation 
       </Card.Text>
     </Card.Footer>
   </Card>
@@ -120,15 +156,18 @@ class Work3D extends Component {
     <Card.Body>
       <Card.Title>Moon Game </Card.Title>
       <Card.Text>
-        Moon Game created using Unreal Engine 4, Maya, Substance Painter, and ZBrush in collaboration with 2 other artists for our Animation for Games course. 
-        <a href="https://vimeo.com/user107311947/review/448719019/c05bef5d2b" rel="noopener noreferrer" target="_blank">
+        RPG created using Unreal Engine 4, Maya, ZBrush and Substance Painter. Environment created in collaboration with 2 other artists.
+        <br /> I made all animations, and created blueprints in UE4 for the animation controller and to allow user functionality, such as the camera controller to allow switching between first person and third person in game.
+        <br /> I was responsible for the river, cabin, environment lighting.
+        
+        <br /> <a href="https://vimeo.com/user107311947/review/448719019/c05bef5d2b" rel="noopener noreferrer" target="_blank">
           See project!
           </a>
       </Card.Text>
     </Card.Body>
     <Card.Footer>
     <Card.Text>
-        Unreal Engine 4 | Game Development | Maya | Substance Painter | ZBrush
+        Unreal Engine 4 | Maya | Substance Painter | ZBrush
       </Card.Text>
     </Card.Footer>
   </Card>
@@ -150,7 +189,21 @@ class Work3D extends Component {
       </Card.Text>
     </Card.Footer>
   </Card>
-           <Card>
+  <Card>
+    <Card.Img variant="top" src={"https://user-images.githubusercontent.com/44556715/90456909-1cd4a380-e0c8-11ea-9953-5100731ec972.png"} />
+    <Card.Body>
+      <Card.Title>Shiba Character Asset</Card.Title>
+      <Card.Text>
+        Shiba character asset created for the Talent Show animation.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Card.Text>
+        3D Modeling | Maya | Shading | UV unwrap | Bake
+      </Card.Text>
+    </Card.Footer>
+  </Card>
+  <Card>
            <Card.Img variant="top" src={"https://user-images.githubusercontent.com/44556715/90457038-750ba580-e0c8-11ea-889b-40087c6dbdc4.png"} />
     <Card.Body>
       <Card.Title>Talent Show </Card.Title>
@@ -165,20 +218,6 @@ class Work3D extends Component {
     <Card.Footer>
     <Card.Text>
         Animation | Maya | Character Design | Modeling 
-      </Card.Text>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src={"https://user-images.githubusercontent.com/44556715/90456909-1cd4a380-e0c8-11ea-9953-5100731ec972.png"} />
-    <Card.Body>
-      <Card.Title>Shiba Character Asset</Card.Title>
-      <Card.Text>
-        Shiba character asset created for the Talent Show animation.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-    <Card.Text>
-        3D Modeling | Maya | Shading | UV unwrap | Bake
       </Card.Text>
     </Card.Footer>
   </Card>
