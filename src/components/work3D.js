@@ -51,9 +51,11 @@ class Work3D extends Component {
     <Card.Body>
       <Card.Title>Game Animations </Card.Title>
       <Card.Text>
+      <div className="cardtext">
         Walk cycle, run cycle, idle cycle, and kick animated in Maya for export into Unreal Engine 4.
         <br />
         Rigged character asset from Adobe Mixamo. 
+        </div>
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -82,6 +84,7 @@ class Work3D extends Component {
     <Card.Body>
       <Card.Title>Before Dawn </Card.Title>
       <Card.Text>
+      <div className= "cardtext">
         RPG created using Unreal Engine 4, with all environment assets created and imported from Maya, ZBrush and Substance Painter. Environment created in collaboration with 2 other artists.
         <br /> I made all animations, and created blueprints in UE4 for the animation controller and to allow user functionality, such as the camera controller to allow switching between first person and third person in game.
         <br /> I was responsible for the sky, river, cabin, their textures, normal maps, environment lighting.
@@ -89,6 +92,7 @@ class Work3D extends Component {
         <br /><a href="https://vimeo.com/493464875" rel="noopener noreferrer" target="_blank">
           See project!
           </a>
+          </div>
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -127,7 +131,9 @@ class Work3D extends Component {
     <Card.Body>
       <Card.Title>Kitchen Environment </Card.Title>
       <Card.Text>
+      <div className= "cardtext">
        I modeled my kitchen from scratch using real-life reference, done in Maya. Technical execution included utilizing holding edges, and keeping realistic proportions and forms. Shaded with natural surfacing using Arnold AI Standard Surfaces so that metallic objects appear specular, and others diffuse.
+      </div>
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -177,8 +183,10 @@ class Work3D extends Component {
     <Card.Body>
       <Card.Title>Character Model</Card.Title>
       <Card.Text>
+      <div className= "cardtext">
        Character modeled from scratch in Maya, and textures created with Substance Painter and Photoshop. <br /> 
        I took video game concept art of a character from Horizon Zero Dawn as reference, and modeled as well as textured the body, face, hands, clothes, and entire model. 
+      </div>
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -196,7 +204,9 @@ class Work3D extends Component {
     <Card.Body>
       <Card.Title>Chair 3D model for AR</Card.Title>
       <Card.Text>
+      <div className= "cardtext">
         Chair 3D asset modeled from scratch based on photo reference for furniture company's AR feature, allowing customers to see the furniture with completely accurate size, textures, and colors in their room before purchasing.
+      </div>
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -210,7 +220,9 @@ class Work3D extends Component {
     <Card.Body>
       <Card.Title>Shiba Character Asset</Card.Title>
       <Card.Text>
+      <div className= "cardtext">
         Shiba character asset created for the Talent Show animation.
+      </div>
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -224,8 +236,9 @@ class Work3D extends Component {
     <Card.Body>
       <Card.Title>Talent Show </Card.Title>
       <Card.Text>
+        <div className= "cardtext">
         Animation created based on the prompt "One act in a talent show" -
-        Character animation, modeling, rigging, UVs, props, materials, lighting all done in Maya. 
+        Character animation, modeling, rigging, UVs, props, materials, lighting all done in Maya. </div>
       </Card.Text>
       <a href="https://vimeo.com/448719019" rel="noopener noreferrer" target="_blank">
           See project!
