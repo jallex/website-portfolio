@@ -55,6 +55,7 @@
 
   .aboutText h4 ul {
     font-size: .8em;
+    line-height: 1.6;
   }
 
 /*
@@ -106,7 +107,6 @@
       padding: 20px;
       padding-bottom: 0px;
     }
-
 }
 
 
@@ -163,6 +163,7 @@
         padding: 20px;
         padding-bottom: 0px;
       }
+
 
   }
 

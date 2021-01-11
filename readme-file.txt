@@ -6,8 +6,10 @@ Welcome to the code for my portfolio website (a current work in progress)!
 This project was made with create-react-app, styling done with CSS and Bootstrap and 3D components done with Three.js
 
 To do:
+- Make cards bigger on mobile
 - Create demo reel and add it to demo section
 - project pages with more detailed project descriptions
+- Fix glitch with modal
 
 - Make a better See Project! button
 - fix styling on deployed site

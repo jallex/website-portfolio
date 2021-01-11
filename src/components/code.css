@@ -9,6 +9,13 @@
     margin: 0;
     padding:25px;
     color: #C9886D; 
+    font-family: 'Lato', sans-serif;
+}
+
+.code-page ul {
+    font-size: 1.1em;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.4;
 }
 
 .deck1 {
