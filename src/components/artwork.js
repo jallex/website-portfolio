@@ -124,7 +124,17 @@ class Artwork extends Component {
       fadeIn: true,
       fadeInSpeed: 500
     }
-    const data = [ {
+    const data = [ 
+      {
+        id: 20,
+        name: "Demon concert",
+        image: "https://user-images.githubusercontent.com/44556715/108859354-21b86980-75bb-11eb-9f57-ea6c7f946731.png"
+      },
+      {
+        id: 19,
+        name: "Gravediggers",
+        image: "https://user-images.githubusercontent.com/44556715/108859790-94c1e000-75bb-11eb-9076-ab1c905272d2.png"
+      },{
       id: 2,
       name: "Forest",
       image: "https://user-images.githubusercontent.com/44556715/90457269-13980680-e0c9-11ea-8a00-366dae248570.jpg"
@@ -181,14 +191,6 @@ class Artwork extends Component {
       name: "Eggs",
       image: "https://user-images.githubusercontent.com/44556715/90457290-18f55100-e0c9-11ea-9478-c803d83f7b43.JPG"
     },{
-      id: 13,
-      name: "Astro red",
-      image: "https://user-images.githubusercontent.com/44556715/90457283-15fa6080-e0c9-11ea-90e0-2244e940300d.gif"
-    }, {
-      id: 14,
-      name: "Astro blue",
-      image: "https://user-images.githubusercontent.com/44556715/90457284-1692f700-e0c9-11ea-9e3d-41e919305763.gif"
-    }, {
       id: 15,
       name: "Hand animated",
       image: "https://user-images.githubusercontent.com/44556715/90457285-1692f700-e0c9-11ea-900b-24937e305571.gif"

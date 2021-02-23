@@ -85,8 +85,8 @@ class Work3D extends Component {
       <Card.Title>Before Dawn </Card.Title>
       <Card.Text>
       <div className= "cardtext">
-        RPG created using Unreal Engine 4, with all environment assets created and imported from Maya, ZBrush and Substance Painter. Environment created in collaboration with 2 other artists.
-        <br /> I made all animations, and created blueprints in UE4 for the animation controller and to allow user functionality, such as the camera controller to allow switching between first person and third person in game.
+        RPG created using Unreal Engine 4, with all environment assets modeled, sculpted, and textured from scratch in Maya, ZBrush and Substance Painter. Environment created in collaboration with 2 other artists.
+        <br /> I made all character animations, and created blueprints in UE4 for the animation controller and to allow user functionality, such as the camera controller to allow switching between first person and third person in game.
         <br /> I was responsible for the sky, river, cabin, their textures, normal maps, environment lighting.
          
         <br /><a href="https://vimeo.com/493464875" rel="noopener noreferrer" target="_blank">

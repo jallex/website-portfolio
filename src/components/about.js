@@ -8,11 +8,11 @@ function About() {
             <div className = "me">
             <div className = "wrapper">
             <img className="background-img" alt="" src={"https://user-images.githubusercontent.com/44556715/90456642-7ee0d900-e0c7-11ea-819d-5522d9baf8d5.png"}/>
-            <h1>Hello! My name is Jackie, and I'm a developer and animator. </h1>
+            <h1>Hello! My name is Jackie, and I'm a computer graphics developer. </h1>
             </div>
             <h4>I am an undergrad at Northeastern University studying Computer Science and Media Arts, 
               a computer graphics major under the Computer and Information Sciences Department.</h4>
-              <h4>I love exploring topics relating graphics, animation, and code! In my freetime I 
+              <h4>Topics that excite me are animation tools, digital simulation, VFX, R&D, virtual reality, and game development! In my freetime I 
                 enjoy drawing, playing guitar, traveling, skateboarding, and spending time outdoors.
               </h4>
               <h4> My intern experiences: 

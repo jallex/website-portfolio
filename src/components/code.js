@@ -101,11 +101,11 @@ normal determination, antialiasing, materials with refraction and reflection, an
       <Card.Title>Markerless Mocap Data Animation</Card.Title>
       <Card.Text>
       <ul class="my-list-style">
-              <li>Tracked human body parts using computer vision and neural networks in markerless mocap system on rgb video and performed 3D reconstruction on 2D video coordinates.</li>
+              <li>Tracked human body parts using computer vision in markerless mocap system on rgb video, which then had 3D reconstruction performed on 2D video coordinates.</li>
               <li>Created 3D animation of human skeleton and objects such as juggling balls using Python and Blender API</li>   </ul>
               {this.state.showMessageAutoLabel && <ul class="my-list-style">
               <li>Using API, created empties at each marker location, connected them with bones, rigged armature to custom mesh, added materials, lighting 
-                cameras.</li>
+                and cameras.</li>
               </ul>}
               <i onClick={() => this.onButtonClickHandler('autolabel')} className = "more-button" aria-hidden="true">{this.displayText(this.state.showMessageAutoLabel)}</i>
               <a href="https://github.com/MatthisLab/VisualizationGoProMocap" rel="noopener noreferrer" target="_blank">
@@ -135,17 +135,24 @@ normal determination, antialiasing, materials with refraction and reflection, an
       alt="Second slide"
     />
   </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/108858476-31837e00-75ba-11eb-986c-017bb1dda950.gif"}
+      alt="Second slide"
+    />
+  </Carousel.Item>
 </Carousel>
     <Card.Body>
       <Card.Title>Marker Mocap Data Animation</Card.Title>
       <Card.Text>
       <ul class="my-list-style">
               <li>Using Python and the Blender API, translated marker mocap data into 3D environment with animated human skeleton.</li>
-              <li>Using API, created an animated armature with keyframed data for each bone, created mesh and parented to armature, applied material and lighting to scene, 
-                incorporated force plate data, matched frame rates, rendered out frames </li>   
+              <li>Developed tool that creates an animated armature with keyframed data for each bone, creates mesh and parented to armature, applies material and lighting to scene, 
+                incorporates force plate data, matches frame rates, renders out frames </li>   
               
               <li> Calculated vectors and matrices related to position and rotation quaternions in 3D space, performed calibrations, projected rays, manipulated cameras and rigid bodies.</li>
-              <li>Wrote post-processing software to create fluid pipeline converting across different data file formats.</li>
+              <li>Wrote post-processing system to create fluid pipeline converting across different data file formats.</li>
               </ul>
               <a href="https://github.com/MatthisLab/Mocap-Cyr-Wheel" rel="noopener noreferrer" target="_blank">
           See project!
