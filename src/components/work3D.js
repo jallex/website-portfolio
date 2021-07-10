@@ -87,7 +87,7 @@ class Work3D extends Component {
       <div className= "cardtext">
         RPG created using Unreal Engine 4, with all environment assets modeled, sculpted, and textured from scratch in Maya, ZBrush and Substance Painter. Environment created in collaboration with 2 other artists.
         <br /> I made all character animations, and created blueprints in UE4 for the animation controller and to allow user functionality, such as the camera controller to allow switching between first person and third person in game.
-        <br /> I was responsible for the sky, river, cabin, their textures, normal maps, environment lighting.
+        <br /> I was responsible for the sky, river, cabin, their textures, normal maps, environment lighting. All environment models are low-poly. 
          
         <br /><a href="https://vimeo.com/493464875" rel="noopener noreferrer" target="_blank">
           See project!
@@ -240,9 +240,6 @@ class Work3D extends Component {
         Animation created based on the prompt "One act in a talent show" -
         Character animation, modeling, rigging, UVs, props, materials, lighting all done in Maya. </div>
       </Card.Text>
-      <a href="https://vimeo.com/448719019" rel="noopener noreferrer" target="_blank">
-          See project!
-          </a>
     </Card.Body>
     <Card.Footer>
     <Card.Text>

@@ -32,44 +32,51 @@ render() {
      <CardDeck className="deck1">
      <Card>
      <Carousel interval = "100000000000000">
-  <Carousel.Item>
+     <Carousel.Item>
     <img
       className="d-block w-100"
-      src={"https://user-images.githubusercontent.com/44556715/91363232-2e096880-e7ca-11ea-8830-abe13dfff70e.png"}
+      src={"https://user-images.githubusercontent.com/44556715/125170983-be049680-e17f-11eb-9910-0e927a79f48a.png"}
       alt="First slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={"https://user-images.githubusercontent.com/44556715/91363259-3c578480-e7ca-11ea-9e96-c32ff6969682.png"}
+      src={"https://user-images.githubusercontent.com/44556715/123519445-54fa2a80-d679-11eb-8d1f-c70d2ff221fa.gif"}
       alt="First slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={"https://user-images.githubusercontent.com/44556715/90033511-8e0df400-dc8d-11ea-883d-ce077dcdc1ec.png"}
+      src={"https://user-images.githubusercontent.com/44556715/123521303-d5258d80-d683-11eb-94de-1727197e6971.png"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/123521634-ecfe1100-d685-11eb-837a-c51414b56ede.png"}
       alt="First slide"
     />
   </Carousel.Item>
   </Carousel>
     <Card.Body>
-      <Card.Title>Raytracer</Card.Title>
+      <Card.Title>3D Object Reader and Mesh Decimation</Card.Title>
       <Card.Text>
         <ul>
-          <li>Renders realistic images through ray tracing techniques on 3D scenes.</li>
-          <li>Used C++ to implement space-time raytracing, motion blur, AABBs, BVH volumes, image textures, perlin noise, Vector3 math operations, rays, shaders, lights, geometry in a scene,
-normal determination, antialiasing, materials with refraction and reflection, and cameras.</li>
+          <li>Reads and displays .obj files created using C++, SDL, and OpenGL.</li>
+          <li>Mesh Decimation implemented using the Edge Collapse algorithm, and decimates mesh by a user specified percentage.</li>
+          <li>Created for course CS4300 Computer Graphics.</li>
         </ul>
-        <a href="https://github.com/jallex/Raytracer" rel="noopener noreferrer" target="_blank">
+        <a href="https://github.com/jallex/Mesh-Decimation" rel="noopener noreferrer" target="_blank">
           See project!
           </a>
       </Card.Text>
     </Card.Body>
     <Card.Footer>
     <Card.Text>
-    Graphics Programming
+    Graphics Programming | C++ | OpenGL
       </Card.Text>
     </Card.Footer>
   </Card>
@@ -115,11 +122,59 @@ normal determination, antialiasing, materials with refraction and reflection, an
     </Card.Body>
     <Card.Footer>
     <Card.Text>
-        Graphics Programming | Research
+        Graphics Programming | Research | Python
       </Card.Text>
     </Card.Footer>
   </Card>
   <Card>
+     <Carousel interval = "100000000000000">
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/91363232-2e096880-e7ca-11ea-8830-abe13dfff70e.png"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/91363259-3c578480-e7ca-11ea-9e96-c32ff6969682.png"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={"https://user-images.githubusercontent.com/44556715/90033511-8e0df400-dc8d-11ea-883d-ce077dcdc1ec.png"}
+      alt="First slide"
+    />
+  </Carousel.Item>
+  </Carousel>
+    <Card.Body>
+      <Card.Title>Raytracer</Card.Title>
+      <Card.Text>
+        <ul>
+          <li>Renders realistic images through ray tracing techniques on 3D scenes.</li>
+          <li>Used C++ to implement space-time raytracing, motion blur, AABBs, BVH volumes, image textures, perlin noise, Vector3 math operations, rays, shaders, lights, geometry in a scene,
+normal determination, antialiasing, materials with refraction and reflection, and cameras.</li>
+    <li>Based on Peter Shirley's Raytracer Series.</li>
+        </ul>
+        <a href="https://github.com/jallex/Raytracer" rel="noopener noreferrer" target="_blank">
+          See project!
+          </a>
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Card.Text>
+    Graphics Programming | C++ 
+      </Card.Text>
+    </Card.Footer>
+  </Card>
+  
+</CardDeck>
+
+<CardDeck className="deck1">
+<Card>
   <Carousel interval = "100000000000000">
   <Carousel.Item>
     <img
@@ -161,13 +216,10 @@ normal determination, antialiasing, materials with refraction and reflection, an
     </Card.Body>
     <Card.Footer>
     <Card.Text>
-        Graphics Programming | Research
+        Graphics Programming | Research | Python
       </Card.Text>
     </Card.Footer>
   </Card>
-</CardDeck>
-
-<CardDeck className="deck1">
   <Card>
   <Carousel interval ="100000000000000">
   <Carousel.Item>
@@ -221,7 +273,7 @@ normal determination, antialiasing, materials with refraction and reflection, an
     </Card.Body>
     <Card.Footer>
     <Card.Text>
-        Graphics Programming | Animation
+        Graphics Programming | Unity | C#
       </Card.Text>
     </Card.Footer>
   </Card>
