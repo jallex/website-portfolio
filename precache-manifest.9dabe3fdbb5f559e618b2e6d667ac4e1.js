@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "13d6f2a3063b9ac73d5a05636ebe2f4a",
+    "revision": "8cdb4e6103024870d337dbf6658ab5de",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.7e20b506.chunk.css"
   },
   {
-    "revision": "755d76dc9cb35ad4acd5",
+    "revision": "6b7c9d120dd077eef9c6",
     "url": "/static/css/main.15da2d4c.chunk.css"
   },
   {
@@ -20,15 +20,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.f223fe0a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "755d76dc9cb35ad4acd5",
-    "url": "/static/js/main.91e2ee5b.chunk.js"
+    "revision": "6b7c9d120dd077eef9c6",
+    "url": "/static/js/main.8e869176.chunk.js"
   },
   {
     "revision": "3bd8e1cffca83cdfd31f",
     "url": "/static/js/runtime-main.cf6344f1.js"
   },
   {
-    "revision": "c16c2951cb50218fc66f1204da62edfc",
-    "url": "/static/media/resume.c16c2951.pdf"
+    "revision": "30027be732f40cb03f5ae3ba6a264a26",
+    "url": "/static/media/2021_Jackie_Allex_resume.30027be7.pdf"
   }
 ]);
